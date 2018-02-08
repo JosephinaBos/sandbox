@@ -1,560 +1,792 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head><title>
-    Air Waybill - SAS Cargo/Airfreight/Document Workflow
-</title><meta property="og:title" content="Air Waybill- SAS Cargo/Airfreight/Press room" /><meta property="og:url" content="http://www.sascargo.com/en/Document Manager/Document Workflow/AWB Document Workflow.aspx" /><meta name="google-site-verification" content="LKKeyQg-E0kiRucwR6CV-t_5bLHiSA2TYi9GqWvNeQg" /><meta name="revisit-after" content="7 days" /><meta name="robots" /><meta name="googlebot" /><meta name="description" content="SAS Cargo fulfills industry&#39;s need for fast and reliable transport solutions." /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=8" />-->
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<META http-equiv="X-UA-Compatible" content="IE=10">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
 
 
-    <meta http-equiv="pragma" content="no-cache" />
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/common.js?v=3"></script>
-    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.autocomplete-min.js"></script>
-    <script type="text/javascript" src="/js/jquery-expand-collapse.js"></script>
-    <script type="text/javascript" src="/js/jquery.open.js"></script>
-    <script type="text/javascript" src="/js/AC_RunActiveContent.js"></script>
-    <script type="text/javascript" src="/js/utils.js"></script>
-    <script type="text/javascript" src="/js/flashembed.min.js"></script>
-    <script type="text/javascript" src="/js/cookieconsent.js"></script>
-     <script src="https://chat.intele.com/Content/Client/js/jquery-intelecomchat.libs.latest.min.js"></script>
-     <script src="https://chat.intele.com/Content/Client/js/jquery-intelecomchat.latest.min.js"></script>
-     <link rel="stylesheet" href="https://chat.intele.com/Content/Client/css/intelecom-light.css" type="text/css" /><link rel="stylesheet" href="/styles/teaser/teaser.css" type="text/css" media="screen" /><link rel="stylesheet" type="text/css" href="/styles/cookieconsent.css?v=1" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="icon" href="/favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="/styles/StyleCollection.css" type="text/css" /><link rel="stylesheet prefetch" href="/styles/SAS-Standard-Table-1.css" />
 
-    <!--[if IE ]> <link rel="stylesheet" media="print" title="Print" type="text/css" href="/styles/ieprint.css" /><![endif]-->
-   <!--[if !IE]>--><link rel="stylesheet" media="print" title="Print" type="text/css" href="/styles/print.css" /><!--<![endif]-->
-    <link href="http://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet" type="text/css" /><link href="/styles/jquery-ui.css" rel="Stylesheet" type="text/css" />
-    <style type="text/css">
-        /* Layout */
-        html, body, #siteContainer { height: 100%; margin: 0; padding: 0; }
-        body > #siteContainer { height: auto; min-height: 100%; }
-        #siteContent { padding-bottom: 45px; }
-        #siteFooter { clear: both; position: relative; z-index: 10; height: 45px; margin-top: -45px; }
-    </style>
-    <style>
- .black_overlay{
-        display: none;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background-color: #b2b2b2;
-        -moz-opacity: 0.8;
-        opacity:.80;
-        filter: alpha(opacity=80);
-    }
 
-    .blocker {
-    display: none;
-    color: #fff;
-    font-size: medium;
-}
 
-.blocker .blocker-title {
-    background-color: #000099;
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    left: 0;
-    top: 0;
-    z-index: 1001;
-}
 
-.blocker .blocker-msg {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    align-content: center;
-}
-.blocker .blocker-overlay {
-    background-color: hsla(0,0%,100%,.5);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-}
-.blocker .blocker-msg .button {
-    margin-left: 10px;
-}
-.button.is-small {
-    border-radius: 2px;
-    font-size: .75rem;
-}
-.button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    align-items: center;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-    display: inline-flex;
-    font-size: 1rem;
-    height: 2.285em;
-    justify-content: flex-start;
-    line-height: 1.5;
-    position: relative;
-    vertical-align: top;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    color: #363636;
-    cursor: pointer;
-    justify-content: center;
-    padding-left: .75em;
-    padding-right: .75em;
-    text-align: center;
-    white-space: nowrap;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+<HEAD>
+<LINK REL="stylesheet" TYPE="text/css" HREF="/sasweb/jquery-ui.css">
+
+    <LINK REL="stylesheet" TYPE="text/css" HREF="/sasweb/css/documentManagerStyles/commonstyles.css">
+    <LINK REL="stylesheet" TYPE="text/css" HREF="/sasweb/css/documentManagerStyles/documentwrkflow.css?v=2">
+
+
+
+<link rel="stylesheet" type="text/css" href="/sasweb/jqueryslidemenu.css">
+<!--[if lte IE 7]
+<LINK REL="stylesheet" TYPE="text/css" HREF="/sasweb/ie.css" media="screen">
+<![endif]-->
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/jquery.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/jquery-ui.min.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/src_validate.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/src_toggleblock.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/src_listbox.js"></SCRIPT>
+<!--<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/src_common.js"></SCRIPT>-->
+<!-- <SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/src_menu.js"></SCRIPT>
+<script type="text/javascript" src="/sasweb/common/jqueryslidemenu.js"></script>
+<script type="text/javascript" src="/sasweb/common/src_screenResolution.js"></script>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" SRC="/sasweb/common/jquery.dropdownPlain.js"></SCRIPT> -->
+
+
+
+<!--[if lte IE 7]>
+<style type="text/css">
+html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 </style>
-    <!-- giosg tag
-    <script>
-                (function(w, t, f) {
-                  var s='script',o='_giosg',h='https://service.giosg.com',e,n;e=t.createElement(s);e.async=1;e.src=h+'/live/';
-                  w[o]=w[o]||function(){(w[o]._e=w[o]._e||[]).push(arguments)};w[o]._c=f;w[o]._h=h;n=t.getElementsByTagName(s)[0];n.parentNode.insertBefore(e,n);
-                })(window,document,3824);
-                </script>
-   giosg tag -->
-     <script type="text/javascript">
-         //$('#start-button').hide();
-         //$('#exit_button').hide();
-         (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-             l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-             l.src='https://surfly.io/surfly.js';y.parentNode.insertBefore(l,y);})
-  (window,document,'script','Surfly');
-         var settings={
-             widget_key:'301c1393cbae4a85b7dbf0306672e68e',
-             hide_until_agent_joins : true,
-             show_loading_screen  : false
-             //cookie_transfer_enabled: true,
-             //cookie_transfer_proxying: false,
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type = "text/javascript">
+var warningpremessageMain="";
+var warningpostmessageMain="";
+
+function clearTimeOutMain() {
+  //alert('Calling clearTimeOut()....');
+   console.log("clear time out main");
+  clearTimeout(warningpremessageMain);
+  clearTimeout(warningpostmessageMain);
+   console.log("clear time out main");
+  //alert('Prinitn sessionTimeoutWarning..'+sessionTimeoutWarning);
+  //setTimeOutFunc();
+}
+
+function setTimeOutFuncMain() {
+ warningpremessageMain=setTimeout('SessionWarning()', parseInt(sessionTimeoutWarning) * 1000);
+ warningpostmessageMain=setTimeout('RedirectToWelcomePage()',parseInt(sessionTimeout)* 1000);
+}
+var sessionTimeoutWarning =
+    "1500";
+        var sessionTimeout = "1800";
+        var timeOnPageLoad = new Date();
+        var sessionWarningTimer = null;
+       var isSignedOn=0;
+       var redirectToWelcomePageTimer = null;
+        //For warning
+        //var sessionWarningTimer = setTimeout('SessionWarning()',
+                //parseInt(sessionTimeoutWarning) * 1000);
+        //To redirect to the welcome page
+        //var redirectToWelcomePageTimer = setTimeout('RedirectToWelcomePage()',
+                    //parseInt(sessionTimeout)* 1000);
+
+        //Session Warning
+        function SessionWarning() {
+            //minutes left for expiry
+            var minutesForExpiry =  (parseInt(sessionTimeout) -
+                    parseInt(sessionTimeoutWarning));
+            var message = "Your session will expire in " +
+        minutesForExpiry/60 + " mins. Click OK to extend the session.";
+
+            //Confirm the user if he wants to extend the session
+            var currentTime2=new Date();
+            currentTime2=Date.parse(currentTime2);
+
+            answer = confirm(message);
+
+            if(currentTime2+300000<Date.parse(new Date())){
+              RedirectToWelcomePage2();
+              return;
+
          }
-         Surfly.init(settings, function(init) {
-        if (init.success) {
-        if (Surfly.currentSession) {
-          $(".btnCobrowse").hide();
-        }
-      }
-             //$('#start-button').show();
-         });
-    </script>
-    <script type="text/javascript">
-        function exitSession(){
-            //$('#exit_button').hide();
-            //$('#start-button').show();
-            Surfly.session().end;
-        }
-    </script>
-<link href="/WebResource.axd?d=maiqTcPBSXs6nXC-CkQQZ9touLlZKSrSDGT-uMIL8w1RBmkjeaDKZYoA3jDf90SeEKEvOlpnnXFnfzlS8qXoRbSWbcwHmzuYS1v4mrK93lL29kPLBRqZQLz9nEY509RTEVAzOzVaOqhMii_q2uBPVQ2&amp;t=635807929886985514" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
-<body>
-<div id="loadingFade" class="black_overlay" style="display:none;position:absolute;margin-top:140px !important;"></div>
-<img style="display:none;position:absolute;margin-top:140px !important;" id="loadingImage" src="/img/layout/loading/ajax-loader.gif"></img>
-<div id="blockerIDSession" class="blocker"><div class="blocker-title animated"><div class="blocker-msg"><span>Please wait until a support agent joins your session.</span>  </div>  </div> <div class="blocker-overlay animated"></div></div>
-
-    <!-- Modal -->
-
-        <div id="siteContainer">
-            <form method="post" action="/Document Manager/Document Workflow/AWB Document Workflow.aspx" id="mainform">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTg1MzMwMDYyDxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWBAIFEGRkFgYCBQ9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPDxYCHgdWaXNpYmxlZ2QWBAIBDw8WAh8BaGQWBAIBDw8WCh4EVGV4dAU6TG9naW4gPGZvbnQgY2xhc3M9InRleHRTZXBlcmF0b3JMaW5lIj4mbmJzcDt8Jm5ic3A7PC9mb250Ph4LTmF2aWdhdGVVcmwFCy9Mb2dpbi5hc3B4HgdUb29sVGlwBRJMb2dpbiB0byBTQVMgQ2FyZ28eCENzc0NsYXNzZR4EXyFTQgICZGQCAw8PFgofAgUNIFJlZ2lzdHJhdGlvbh8DBRcvQWRtaW5SZWdpc3RyYXRpb24uYXNweB8EBRVSZWdpc3RlciB0byBTQVMgQ2FyZ28fBWUfBgICZGQCAw9kFgYCAQ8PFgYfBQUMU01EX1VzZXJOYW1lHwIFEFRyaWxvY2hhbiBCaXN3YWwfBgICZGQCBw8PFgwfAwUtL0NvbmZpZ3VyYXRpb24vU2V0dGluZ3MvUHJvZmlsZS9Vc2VySW5mby5hc3B4HwIFE015IHByb2ZpbGUvc2V0dGluZ3MfBAUTTXkgcHJvZmlsZS9zZXR0aW5ncx8FBRJTTURfTGV2ZWxNeVByb2ZpbGUfBgICHwFoZGQCCQ8PFggfAgUHTG9nIG91dB8EBQdMb2cgb3V0HwUFD1NNRF9MZXZlbExvZ291dB8GAgJkZAIHD2QWAmYPZBYCZg9kFgICAw9kFgICCQ8PFgIfAgUHQ29udGFjdGRkAg0PZBYCAgIPZBYCZg9kFgJmD2QWAgIFDw8WAh8CBQtBaXIgV2F5YmlsbGRkAgYPZBYCZg9kFgJmD2QWAmYPZBYMAgEPDxYCHwIFGyYjMTY5OyAyMDE1IFNBUyBDYXJnbyBHcm91cGRkAgUPDxYGHwIFFlRlcm1zICZhbXA7IENvbmRpdGlvbnMfBAUUVGVybXMgYW5kIENvbmRpdGlvbnMfAwUfL01pc2MvVGVybXMtQW5kLUNvbmRpdGlvbnMuYXNweGRkAgkPDxYGHwIFDlByaXZhY3kgUG9saWN5HwQFDlByaXZhY3kgUG9saWN5HwMFGS9NaXNjL1ByaXZhY3ktUG9saWN5LmFzcHhkZAINDw8WBh8CBQdDb29raWVzHwQFHFJlYWQgYWJvdXQgb3VyIGNvb2tpZSBwb2xpY3kfAwUSL01pc2MvQ29va2llcy5hc3B4ZGQCEQ8PFgYfAgUPQWJvdXQgU0FTIENhcmdvHwQFD0Fib3V0IFNBUyBDYXJnbx8DBRovTWlzYy9BYm91dCBTQVMgQ2FyZ28uYXNweGRkAhMPDxYCHwFoZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgMFK3RvcG1lbnVfMCRCYXNlX0NvbnRlbnRfTWVudUJhciRUb29sVGlwUHJpbnQFLHRvcG1lbnVfMCRCYXNlX0NvbnRlbnRfTWVudUJhciRUb29sVGlwU2VhcmNoBS10b3BtZW51XzAkQmFzZV9Db250ZW50X01lbnVCYXIkVG9vbFRpcENvbnRhY3RSb+NyzQ45FlsitPsS4NBLChJuy7ceNH/UJWJ3e8PW9Q==" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['mainform'];
-if (!theForm) {
-    theForm = document.mainform;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
 
 
-<script src="/WebResource.axd?d=g1e9t9peQdW7bMv3ekMrzVr9VpUJGKBipz430atG3tZltdKaa_LzGo_8KUkdm4muFWsjlj3DdZ3hriDTx89Q6Yo41QMQ_WlSJp8zZbB9Wiw1&amp;t=635803002500000000" type="text/javascript"></script>
+            //if yes, extend the session.
+            if(answer)
+            {
 
-
-<script src="/ScriptResource.axd?d=CDot6Xu_r1sOcKuShGvmQQLXiJWmf72Q5KWs0quc3aG0IPYOyAddxd5y8_nLj6hLRqcZvP9oi5eoeHs8gtU4UaQ32wz3WDZyOVoDtJ0tUL4_HYxOjinxosFI7YrpNXyRBfia9BMXz8PscU99aRqb6njETdd2PQ-kNbtZGvPdj6c1&amp;t=5f9d5645" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=raXbPRbripSlAihNGYQ0DROHHmMlQMn1IdtJqX_RcxB-RaeEzpJT4idEObTv3MnN6K6U6GnHcAJN_lnEWd5sfMuLPiU4aF1gqc-p4K_8KEoxGDmheTGwYHVX_VKiKj8e7XsWkCUGccRzAb0NUmpFvv6JGobD56iCsA2PHJ7Fb8z0XXXIXfzXyFRcKGDvj_xk0&amp;t=5f9d5645" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=RKvqUwxFZ3EplluFepthm9NAwWDVE-ZeAebLgR1GilCsItlBgx4y5HKts8GReuOamQFTpnTz8ot1euYM3fuj9WxsFvVQdYSOrLquzXykpq-8M29EnSNOZjfwoQYRSlIbMDUFmWV_RKvpC9vksY7s-g2&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=kf4aUG-sAXDmSNYKptXWXwpvQD-7u1lPrFeWiFfoN1Q15Lp2o81UY2nR7A2yLBJk6Wh_FUzF2wAAqjOvr_QlBqL0rcGHQHdp-d7wDU8h7_sFOfyr9JW9Na2GxGJ0XBPYJLE-UIXHtK8rFwIwRuGJbA2&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=PI1pPQkdQumgDVUgTeAoudiBpV-71X0hcYgvCweXcAkACkOpex0DzEv4PoTeaG5tbgMH-gy23WgjUTHS6Z_xzA7THy5pzqYVxDdlx5_tOXdhsG3OGaafN4JR5zkJhDaktdsAzPypiVuBVWSO45A3njNeLYfBYzrtX7zxf74QoQw1&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=4pipAOvUWZrajd05dgXc7489_dlfSimC9tGHgFr8cij3Qx1RgjgLvbukyORhsCN0kTZK0SAg0xQKR3kQuEZ9pc_BfkrbyFhD8JadJ1Z52ixoGGtDJi0YnrfQSC9jdSDt0wRDhpxFAUEKL9J9guh_Iw2&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=U_hNYB_FELlYviOhTPRJR52U31AmEmctxkwuWdiDGHOcZo3-F_E8htlQNx6EsNyo7wLlFISmDf2YbciJKxvy55VyUNBlEgTcYnz8dNsba2G6itP2eUsk6RbDOzG2lJ81M2kSNXoeyzvCRMaOz04Xlg2&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=EVGiz-K4izvbdHDRriTtwBztEpX-Z7akpl--eVaLyvNKHKS2xbvqkISNPBx6uSS5W4fOklOaxZuqVgBV_yDysYNPpIwYARXuunoMBtIrDlVR3xa37OzhAcnkpmBgS-l6gfakp6Hj7Qnv9Es1FQc61Uu2rHumnZRPADOvEyVAbBE1&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=VW1UUGzgaiPczXXvrlX7XzQ3ZP9HACFuf1rn8zKapOnhQV2THkOWbbch7pssr7TKLg_d1Tj4BOYDWaVvndT8q_4ImQQHLwuX759HK9Ov6nDsax7of8f5CpY8z2yH6LM1wil6NzemOtyzWZlFrmFOmzUOdTtcPad8e1PZ80pf_vk1&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=m64aiYSmRso015tOTPDAEzCA_rrEU_qQ4Iy0tx0oznXeCX1PxIDQZlAVBvEic_JzZa6UF3H8XgpibLscxXA-8My55EjGb0cwVRgWJK5YiNz9cB2h2sn_BpC20RmCvcbW1ax9gq3sBQE7ZeYeVLHE8A2&amp;t=ffffffffccef7351" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BEF75717" />
-    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAU4LeoE7J5eDdHN6sLTGdUu/NkpJV/h3F2DYSp/FZHEBmBFZRRux5FZ1uO3Qi0NUd5PuHBMOjlDUo6G2Hhdi4OcGjAJbSBLQFthaNHw/ko/U8FGt08Gzx/gG2BhPo1PYfv8T91cdV6Xdd9evsHSauuw" />
-</div>
-                <div id="siteHolder" class="BD_siteWidth">
-                    <div id="siteContent">
-
-                    <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'mainform', ['tRadAjaxManager1SU','RadAjaxManager1SU'], [], [], 90, '');
-//]]>
-</script>
-
-                    <!-- 2012.2.607.35 --><div id="RadAjaxManager1SU">
-    <span id="RadAjaxManager1" style="display:none;"></span>
-</div>
-                    <span class="onlyInPrint" style="padding-bottom: 10px; padding-top: 0px;padding-left:20px;">
-                        <img src="/img/layout/content/logo.gif" alt="SAS Cargo logo" title="SAS Cargo logo" />
-                    </span>
-                    <div class="notInPrint">
-
- <div class="HD_siteHeader BD_siteWidth" style="background-image: url(/~/media/Images/Headers/cargo_topbannerProdNew.ashx);">
-    <div class="BD_stdFloatLeft HD_Logo"><a href="/" class="HD_LogoLink">&nbsp;</a></div>
-
-    <div class="BD_stdFloatRight HD_MenuBar">
-        <div id="header_0_Base_Common_Header_Base_Common_LoginArea1_pnlShowArea">
-
-
-    <div id="header_0_Base_Common_Header_Base_Common_LoginArea1_pnlLogout">
-
-        <ul>
-            <li>
-                <span id="lblUserName" class="SMD_UserName">Trilochan Biswal</span>
-            </li>
-        <input type="hidden" name="header_0$Base_Common_Header$Base_Common_LoginArea1$lbluserEmail" id="lbluserEmail" value="trilochan.biswal@unisys.com" />
-        <input type="hidden" name="header_0$Base_Common_Header$Base_Common_LoginArea1$lbluserCountryName" id="lbluserCountryName" value="Chat_Chat" />
-            <li>
-
-            </li>
-            <li>
-               <!-- <a id="header_0_Base_Common_Header_Base_Common_LoginArea1_linkLogout" title="Log out" class="SMD_LevelLogout" href="javascript:__doPostBack(&#39;header_0$Base_Common_Header$Base_Common_LoginArea1$linkLogout&#39;,&#39;&#39;)">Log out</a>-->
-<input type="submit" name="header_0$Base_Common_Header$Base_Common_LoginArea1$btnLogout" value="Log out" id="header_0_Base_Common_Header_Base_Common_LoginArea1_btnLogout" title="Log out" class="logout_new" style="background-color:Transparent;border-style:None;cursor:pointer" />
-            </li>
-        </ul>
-
-    </div>
-
-</div>
-    </div>
-  </div>
-
-
-<div class="ND_MenuWidth ND_MenuHeight">
-    <div class="ND_topMenu ND_MenuPadding BD_stdFloatLeft">
-        <ul id="menu"><li><span><a class="NotSelected">Manage Profile</a></span><ul><li><span><a href="/ManageProfile/MyProfile.aspx" class="NotSelected">My Profile</a></span><ul></ul></li><li><span><a href="/ManageProfile/Manage Branch Info.aspx" class="NotSelected">Manage Branch Info</a></span><ul></ul></li><li><span><a href="/ManageProfile/AssociationOfBranches.aspx" class="NotSelected">Association of Branches</a></span><ul></ul></li><li><span><a href="/ManageProfile/ManageBranchUsers.aspx" class="NotSelected">Manage Branch Users</a></span><ul></ul></li><li><span><a href="/ManageProfile/ManageCarrierUsers.aspx" class="NotSelected">Manage Carrier Users</a></span><ul></ul></li><li><span><a href="/ManageProfile/ManageBranchAccess.aspx" class="NotSelected">Manage Branch Access</a></span><ul></ul></li><li><span><a href="/ManageProfile/ManageErrorMessages.aspx" class="NotSelected">Manage Error Messages</a></span><ul></ul></li><li><span><a class="NotSelected">Reports</a></span><ul><li><span><a href="/ManageProfile/Reports/Client Report.aspx" class="NotSelected">Client Report</a></span><ul></ul></li><li><span><a href="/ManageProfile/Reports/Customer Report.aspx" class="NotSelected">Customer Report</a></span><ul></ul></li><li><span><a href="/ManageProfile/Reports/Statistics Report.aspx" class="NotSelected">Statistics Report</a></span><ul></ul></li></ul></li></ul></li><li><span><a href="/SASCredits.aspx" class="NotSelected">SAS Credits</a></span><ul><li><span><a href="/SASCredits/SASCredits.aspx" class="NotSelected">SAS Credits</a></span><ul></ul></li><li><span><a href="/SASCredits/AccrualRules.aspx" class="NotSelected">Accrual rules</a></span><ul></ul></li><li><span><a href="/SASCredits/TermsAndConditions.aspx" class="NotSelected">Terms and Conditions</a></span><ul></ul></li></ul></li><li><span><a class="NotSelected">Booking</a></span><ul><li><span><a href="/Booking/Create-modify-booking.aspx" class="NotSelected">Create/Retrieve Booking</a></span><ul></ul></li><li><span><a href="/Booking/createexpressbooking.aspx" class="NotSelected">Create/Retrieve Express Booking</a></span><ul></ul></li><li><span><a href="/Booking/BookingTemplate.aspx" class="NotSelected">Booking Template</a></span><ul></ul></li><li><span><a href="/Booking/Booking-Status.aspx" class="NotSelected">Booking Status</a></span><ul></ul></li><li><span><a href="/Booking/Booking-History.aspx" class="NotSelected">Booking History</a></span><ul></ul></li><li><span><a href="/Booking/AWB-EAWB.aspx" class="NotSelected">AWB/E-AWB</a></span><ul></ul></li><li><span><a href="/Booking/FlightSchedules.aspx" class="NotSelected">Flight Schedule</a></span><ul></ul></li><li><span><a href="/Booking/AllotmentRequest.aspx" class="NotSelected">Allotment Request</a></span><ul></ul></li><li><span><a href="/Booking/AllotmentStatus.aspx" class="NotSelected">Allotment Status</a></span><ul></ul></li><li><span><a href="/Booking/Tracking-MultipleTracking.aspx" class="NotSelected">Tracking/Multiple Tracking</a></span><ul></ul></li><li><span><a href="/Booking/Cargo iQ Tracking.aspx" class="NotSelected">Cargo iQ Tracking</a></span><ul></ul></li><li><span><a href="/Booking/Mobile-tracking.aspx" class="NotSelected">Mobile tracking</a></span><ul></ul></li></ul></li><li><span><a class="NotSelected">Products</a></span><ul><li><span><a href="/Products/SAS-Priority-Cargo.aspx" class="NotSelected">SAS Priority Cargo</a></span><ul></ul></li><li><span><a href="/Products/SAS-Pharma-Cargo.aspx" class="NotSelected">SAS Pharma Cargo</a></span><ul></ul></li><li><span><a href="/Products/SAS-General-Cargo.aspx" class="NotSelected">SAS General Cargo</a></span><ul></ul></li><li><span><a href="/Products/SAS-Budget-Cargo.aspx" class="NotSelected">SAS Budget Cargo</a></span><ul></ul></li><li><span><a href="/Products/SAS Allotment Cargo.aspx" class="NotSelected">SAS Allotment Cargo</a></span><ul></ul></li><li><span><a href="/Products/SAS Airmail.aspx" class="NotSelected">SAS Airmail</a></span><ul></ul></li><li><span><a href="/Products/Surcharges-Fees.aspx" class="NotSelected">Surcharges/Fees</a></span><ul></ul></li><li><span><a href="/Products/Conditions for carraige.aspx" class="NotSelected">Conditions for carriage</a></span><ul></ul></li></ul></li><li><span><a class="NotSelected">Docs</a></span><ul><li><span><a href="/Docs/Air Waybill.aspx" class="NotSelected">Air Waybill Rules</a></span><ul></ul></li><li><span><a href="/Docs/AWB Stock Request.aspx" class="NotSelected">AWB Stock Request</a></span><ul></ul></li><li><span><a href="/Docs/AWB Stock Status.aspx" class="NotSelected">AWB Stock Status</a></span><ul></ul></li><li><span><a href="/Docs/HAWB Info.aspx" class="NotSelected">HAWB Info</a></span><ul></ul></li><li><span><a href="/Docs/HAWB Template.aspx" class="NotSelected">HAWB Templates</a></span><ul></ul></li><li><span><a href="/Docs/View Custom Status.aspx" class="NotSelected">Custom Status</a></span><ul></ul></li><li><span><a href="/Docs/Barcode Print.aspx" class="NotSelected">Barcode Print</a></span><ul></ul></li><li><span><a href="/Docs/Request Label.aspx" class="NotSelected">Request Label</a></span><ul></ul></li></ul></li><li><span><a class="NotSelected">Operations</a></span><ul><li><span><a href="/Operations/Handling by Station.aspx" class="NotSelected">Handling by Station</a></span><ul></ul></li><li><span><a href="/Operations/e-AWB.aspx" class="NotSelected">e-AWB/e-Freight</a></span><ul><li><span><a href="/Operations/e-AWB/How to get started.aspx" class="NotSelected">How to get started with e-AWB</a></span><ul></ul></li><li><span><a href="/Operations/e-AWB/FWB - the electronic AWB.aspx" class="NotSelected">FWB - the electronic Air Waybill</a></span><ul></ul></li><li><span><a href="/Operations/e-AWB/System requirements.aspx" class="NotSelected">System requirements</a></span><ul></ul></li></ul></li><li><span><a href="/Operations/Pharma.aspx" class="NotSelected">Pharma shipments (PIL) – R4C</a></span><ul></ul></li><li><span><a href="/Operations/Road feeder service.aspx" class="NotSelected">Road Feeder Service</a></span><ul></ul></li><li><span><a href="/Operations/Aircraft-and-ULD.aspx" class="NotSelected">Aircraft and ULDs</a></span><ul></ul></li><li><span><a href="/Operations/File Claim.aspx" class="NotSelected">File Claim</a></span><ul><li><span><a href="/Operations/File Claim/Preliminary-claim.aspx" class="NotSelected">Preliminary claim</a></span><ul></ul></li><li><span><a href="/Operations/File Claim/Final-claim.aspx" class="NotSelected">Final claim</a></span><ul></ul></li><li><span><a href="/Operations/File Claim/Claim-status.aspx" class="NotSelected">Claim status</a></span><ul></ul></li></ul></li><li><span><a href="/Operations/Cancellations.aspx" class="NotSelected">Cancellations</a></span><ul></ul></li><li><span><a href="/Operations/Safety-and-security.aspx" class="NotSelected">Safety and Security</a></span><ul><li><span><a href="/Operations/Safety-and-security/News.aspx" class="NotSelected">Safety and Security News</a></span><ul></ul></li><li><span><a href="/Operations/Safety-and-security/Tracking and monitoring.aspx" class="NotSelected">Tracking and monitoring</a></span><ul></ul></li><li><span><a href="/Operations/Safety-and-security/Flight-safety.aspx" class="NotSelected">Flight safety</a></span><ul></ul></li><li><span><a href="/Operations/Safety-and-security/Lithium-batteries.aspx" class="NotSelected">Lithium batteries</a></span><ul></ul></li></ul></li><li><span><a href="/Operations/Quality.aspx" class="NotSelected">Quality (Cargo iQ)</a></span><ul></ul></li></ul></li><li><span><a class="NotSelected">News</a></span><ul><li><span><a href="/News/Corporate News.aspx" class="NotSelected">Corporate News</a></span><ul></ul></li><li><span><a href="/News/Operational News.aspx" class="NotSelected">Operational News</a></span><ul></ul></li><li><span><a href="/News/PictureBank.aspx" class="NotSelected">Picture bank</a></span><ul><li><span><a href="/News/PictureBank/Aircraft-Airbus.aspx" class="NotSelected">Aircraft - Airbus</a></span><ul></ul></li><li><span><a href="/News/PictureBank/Aircraft-Boeing.aspx" class="NotSelected">Aircraft - Boeing</a></span><ul></ul></li><li><span><a href="/News/PictureBank/Airside.aspx" class="NotSelected">Airside</a></span><ul></ul></li></ul></li></ul></li><li><span><a href="/Support.aspx" class="NotSelected">Support</a></span><ul></ul></li><li class="Selected"><span><a class="Selected">Document Manager</a></span><ul><li><span><a href="/Document Manager/Document Workflow.aspx" class="Selected">Document Workflow</a></span><ul><li><span><a href="/Document Manager/Document Workflow/AWB Document Workflow.aspx" class="Selected">Air Waybill</a></span><ul></ul></li><li><span><a href="/Document Manager/Document Workflow/HAWB Document Workflow.aspx" class="Selected">House Waybill</a></span><ul></ul></li></ul></li><li><span><a href="/Document Manager/My Shipments.aspx" class="Selected">My Shipments</a></span><ul></ul></li><li><span><a href="/Document Manager/Document Template.aspx" class="Selected">Document Template</a></span><ul></ul></li><li><span><a href="/Document Manager/Pending Documents.aspx" class="Selected">Pending Documents</a></span><ul></ul></li></ul></li><li><span><a class="NotSelected">Environment</a></span><ul><li><span><a href="/Environment/Environment.aspx" class="NotSelected">Environment</a></span><ul></ul></li><li><span><a href="/Environment/SAS Cargo Activities.aspx" class="NotSelected">SAS Cargo Activities</a></span><ul></ul></li><li><span><a href="/Environment/Emission Calculator.aspx" class="NotSelected">Emission Calculator</a></span><ul></ul></li></ul></li><li><span><a href="/FAQs.aspx" class="NotSelected">FAQs</a></span><ul></ul></li></ul>
-    </div>
-
-
-
-<div class="BD_stdFloatRight HD_MenuBar">
-        <a id="topmenu_0_Base_Content_MenuBar_linkPrint" class="HD_Print HD_Link" onclick="javascript:window.print();" href="javascript:void(0)">Print</a>
-        <div id="topmenu_0_Base_Content_MenuBar_ToolTipPrint" style="display:none;position:absolute;">
-
-            <div class="HD_ToolTip"><b>Printer friendly version</b><br />Get a printable version of this page.</div>
-        <input id="topmenu_0_Base_Content_MenuBar_ToolTipPrint_ClientState" name="topmenu_0_Base_Content_MenuBar_ToolTipPrint_ClientState" type="hidden" />
-</div>
-        <a id="topmenu_0_Base_Content_MenuBar_linkSearch" class="HD_Search HD_Link" href="/Search.aspx">Search</a>
-        <div id="topmenu_0_Base_Content_MenuBar_ToolTipSearch" style="display:none;position:absolute;">
-
-            <div class="HD_ToolTip"><b>Search SAS Cargo</b><br/>Search sascargo.com for information and news.</div>
-        <input id="topmenu_0_Base_Content_MenuBar_ToolTipSearch_ClientState" name="topmenu_0_Base_Content_MenuBar_ToolTipSearch_ClientState" type="hidden" />
-</div>
-        <a id="topmenu_0_Base_Content_MenuBar_linkContact" class="HD_Info HD_Link" href="/Contact.aspx">Contact</a>
-        <div id="topmenu_0_Base_Content_MenuBar_ToolTipContact" style="display:none;position:absolute;">
-
-            <div class="HD_ToolTip"><b>Open contact page</b><br/>Find your local contact person.</div>
-        <input id="topmenu_0_Base_Content_MenuBar_ToolTipContact_ClientState" name="topmenu_0_Base_Content_MenuBar_ToolTipContact_ClientState" type="hidden" />
-</div>
-  </div>
-
-</div>
-                    </div>
-                    <!--Campaign Ticker-->
-                    <div class="paddingForCampaignTickerTop"></div>
-                    <div class="notInPrint" id="plhCampaignTickerDiv" style="position:fixed;width:961px;z-index:11;">
-
-                    </div>
-                    <!-- Site Content -->
-                    <!--Username: &lt;%= Sitecore.Context.User.Name %&gt;, Site: &lt;%= Sitecore.Context.Site.Name %&gt;<br />-->
-                    <div class="BD_siteContent BD_siteWidth BD_stdFloatLeft">
-                        <!--<div class="notInPrint">-->
-                        <div>
-
-                        </div>
-                        <div id="content_0_someID" class="intelecomchat">
-    <script src="https://chat.intele.com/Content/Client/js/jquery-intelecomchat.libs.latest.min.js"></script>
-   <script src="https://chat.intele.com/Content/Client/js/jquery-intelecomchat.latest.min.js"></script>
- <link rel="stylesheet" href="https://chat.intele.com/Content/Client/css/intelecom-light.css" type="text/css" />
-
-<style>
-       .intelecomchatheader  {background-color:#000099}
-       .intelecomchat__button{background:#000099;}
-       .intelecomchatstarter   {background-image:url(http://dev.sasweb.sascargo.com/sasweb/images/Chat-Support.png); border: none !important; width: 122px; height: 125px; background-size:200px; display:block !important;}
-        .intelecomStarterMiddle{bottom : 0% !important; top: 88% !important;}
-        .intelecomchatinner{font-size: 17px;}
-     </style>
-
-
-<div id="someID" class="intelecomchat"></div>
-     <script>
-    $(document).ready(function () {
-            $('#someID').intelecomChat({
-                    customerKey: '31796',
-                    queueKey: document.getElementById("lbluserCountryName").value,
-                    showForm: false,
-                //      msgClosedHeader: '', // text message
-                //      onContactCenterClosed: function(){}, //runs when closed
-                //      onChatStart: function(){}, //runs when clicking the chat button
-                //      onChatWindowShow: function(){}, //runs when chat window is displayed
-                //      onChatWindowMinimize: function(){},//runs when chat window's minimized
-                //      showForm: true, //enable user to enter name and e-mail at startup
-                //      showStarter: true, //displays the chat starter circle
-                //      delayStarterSeconds: 0, //delays the chat starter circle
-                //      showStarterWhenMinimized: true, //displays the chat starter circle
-                //      horizontalStarterPosition: 'right', //position the chat starter circle
-                //      verticalStarterPosition: 'middle', // position the chat starter circle
-                //      chatlink: '.chatstarter', //default class for chat button link
-                //      horizontalChatPosition: 'right', // positions the chat window
-                //      verticalChatPosition: 'bottom', // positions the chat window
-                        draggable: true, //enables user to move window
-                        resizable: true, //enables user to resize window
-                //      maxinfoMessageLength: 30, //enables to alter maximum status text width
-                //      nickName: '', //can be added from the web page
-                //      chatId: '', //can be added from the web page
-                //      chatIssue: '', //can be added from the web page
-                //      altQueueKey: '', //alternative queue to check for available agents
-                        languageCode: 'EN', //language settings (NO, SE, DK, EN)
-                //      showIntro: false, //to show intro text field at initiation
-                //      showAgentLoggedOnInIntro: false, //include "agents logged on" in intro
-                //      showAgentActiveInIntro: false, //include "active agents" in intro
-                //      showNumberInQueueInIntro: false, //include "number in queue" in intro
-                //      showVariablesInIntro: true, //include "variables" in intro
-                //      msgWelcomeHeader: '', //text message
-                //      msgWelcome: '', // text message
-                //      msgWelcomeFull: '', // text message
-                //      msgWelcomeEmpty: '', // text message
-                //      msgWelcomePause: '', // text message
-                //      msgReject: '', // text message
-                //      msgGoodbyeHeader: '', // text message
-                //      msgGoodbye: '', // text message
-                //      variables: {}, //variables to include in CRM popup
-                //      showSendEmail: true, //allows to show email option
-                //      emailSubject: 'my email subject text', //subject text to show in email
-                //      fromEmailDisplayName: 'Your Companies Name', //display name
-                //      emailPreText: 'Hello.[br][br]Thank you for speaking…',
-                //      emailPostText: 'If you require any further information…',
-                //      emailLogoUrl: 'http://mysite.com/pictures/logo.png',
-                //      emailLogoLink: 'http://www.intele.com/',
-                //      emailLogoAlt: 'Intelecom',
-                //      emailTopBackgroundColor: '#FFFFFF',
-                //      emailTopLineColor: '#555555',
-                //      emailTopBackgroundColor: '#FFFFFF',
-                //      emailBottomLineColor: '#555555',
-                //      emailTextStyle: 'font-size:9.0pt;font-family:\"Calibri\",sans-serif;',
-                //      emailTopBackgroundColor: '#FFFFFF',
-                //      onChatEnd: function(){}, // runs when closing chat window #1
-                //      onChatWindowClose: function(){}, //runs when closing chat window #2
-                    onChatStart: function () {
-                        $(this).intelecomChat('reloadOptions', {
-                            nickName: document.getElementById("lblUserName").innerHTML,
-                            chatId: document.getElementById("lbluserEmail").value,
-
-
-                        });
-                    }
-            });
-        });
-    </script>
-
-</div>
-
-<div id="content_1_cookieconsentID" class="cookieconsent">
-        <script type="text/javascript">
-        // <![CDATA[
-        cc.initialise({
-            cookies: {
-                //social: {},
-                //analytics: {},
-                //advertising: {},
-                necessary: {}
-            },
-            settings: {
-                consenttype: "implicit"
+                isSignedOn=1;
+                //var refreshURL=(document.referrer).substring(0,(document.referrer).indexOf(".com")+4)+"/Booking/Booking%20Template.aspx";
+                var refreshURL="http://www.sascargo.com/Booking/Booking%20Template.aspx";
+                var a = window.open(refreshURL, '','width = 0, height =0');
+                //isSignedOn="Y";
+                a.blur();
+                 //a.close();
+                 setTimeout(function(){
+             a.close();
+        },2000);
+                //Clear the RedirectToWelcomePage method
+                if (redirectToWelcomePageTimer != null) {
+                    clearTimeout(redirectToWelcomePageTimer);
+                }
+           //reset the time on page load
+                timeOnPageLoad =  new Date();
+                sessionWarningTimer = setTimeout('SessionWarning()',
+                parseInt(sessionTimeoutWarning) * 1000);
+                //To redirect to the welcome page
+                redirectToWelcomePageTimer = setTimeout
+        ('RedirectToWelcomePage()',parseInt(sessionTimeout)* 1000);
             }
-        });
-        // ]]>
-    </script>
-</div>
 
-<div class="BD_stdFloatLeft">
-    <div class="&lt;%= SiteWidth %&gt; BD_stdFloatLeft BD_LeftMarginContent">
-        <!--<div id="breadCrumb" class="TD_breadcrumb BD_stdFloatLeft" onmouseover="ChangeCss('breadCrumb', 'TD_breadcrumbHover', 'mouseover')" onmouseout="ChangeCss('breadCrumb', 'TD_breadcrumb', 'mouseout')"><a href="/Document Manager/Document Workflow/AWB Document Workflow.aspx">Home</a> /
-    </div>-->
-        <div class="BD_stdClearBoth"></div>
-        <div id="content_2_Base_Content_StandardPage1_dotHolder"></div>
-        <!--<h1><span id="content_2_Base_Content_StandardPage1_lblHeading">Air Waybill</span></h1>
-        <hr />-->
-    </div>
-</div>
+            //*************************
+            //Even after clicking ok(extending session) or cancel button,
+       //if the session time is over. Then exit the session.
+            var currentTime = new Date();
+            //time for expiry
+            var timeForExpiry = timeOnPageLoad.setMinutes(timeOnPageLoad.getMinutes() +
+                parseInt(sessionTimeout));
+
+            //Current time is greater than the expiry time
+            if(Date.parse(currentTime) > timeForExpiry)
+            {
+                alert("Session expired. Redirecting to login page.");
+                //top.location=(document.referrer).substring(0,(document.referrer).indexOf(".com")+4)+"/VirtualUserLogout.aspx";
+                top.location="http://www.sascargo.com/VirtualUserLogout.aspx";
+
+               // window.location = "../../../loginPage.jsp";
+            }
+            //**************************
+        }
+
+        //Session timeout
+        function RedirectToWelcomePage(){
+            alert("Session expired. Redirecting to login page.");
+         // top.location=(document.referrer).substring(0,(document.referrer).indexOf(".com")+4)+"/VirtualUserLogout.aspx";
+         top.location="http://www.sascargo.com/VirtualUserLogout.aspx";
+
+        }
 
 
-<div class="BD_stdFloatLeft CD_1">
-<!-- Col 1 -->
-    <div class="BD_siteWidthContent BD_stdFloatLeft BD_LeftMarginContent CD_1Col TD_Content">
+         function RedirectToWelcomePage2(){
+                alert("Session already expired. Redirecting to login page.");
+             // top.location=(document.referrer).substring(0,(document.referrer).indexOf(".com")+4)+"/VirtualUserLogout.aspx";
+             top.location="http://www.sascargo.com/VirtualUserLogout.aspx";
+
+        }
+
+</script>
 
 
-        <p>
-            <iframe width="1700" height=2000" frameborder="0" scrolling="no" src="http://prod.sasweb.sascargo.com/sasweb/secure/documentManager/awbworkflow_newUI.jsp" class="printflightschedule" id="IFrame"></iframe>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SAS Cargo</title>
+<script src="/sasweb/common/documentManager/jquery-2.1.4.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/sasweb/common/documentManager/src_emailform.js?v=13:08:23" type="text/javascript"></script>
+<script src="/sasweb/common/documentManager/src_awbworkflow_newUI.js?v=13:08:23" type="text/javascript"></script>
+
+<script src="/sasweb/common/documentManager/src_addressbookpredictivetext.js?v=13:08:23" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/sasweb/css/documentManagerStyles/toggles.css"/>
+<link rel="stylesheet" type="text/css" href="/sasweb/css/documentManagerStyles/documentwrkflow_UI.css?v=13:08:23"/>
+<script src="/sasweb/common/angular.min.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="JavaScript"   SRC="/sasweb/common/documentManager/awbworkflowAJ.js?v=66"></SCRIPT>
 
 <script>
-window.addEventListener('message', function(e) {
-  var $iframe = jQuery("#IFrame");
-  var param=JSON.parse(e.data);
-  var eventName = param.paramName;
-  switch(eventName) {
-    case 'setHeight':
-      window.frames[0].postMessage(JSON.stringify({'num':$(window).scrollTop()}),'*');
-      var data = param.paramValue;
-      //$iframe.height(parseInt(data)+25);
-      console.log(parseInt(data));
-      break;
-    case 'scrollToTop':window.scrollTo(0, 0);
-                  break;
-    case 'chromeScroll':
-         var data = param.paramValue;
-      //$iframe.height(parseInt(data)+25);
-      console.log("chromeScroll-Site"+parseInt(data));
-        window.scrollTo(0, parseInt(data)-400);
-                  break;
-  }
-}, false);
-$(document).ready(function(){
-        $(window).scroll(function(){
-            window.frames[0].postMessage(JSON.stringify({'num':$(window).scrollTop()}),'*');
-        });
+
+var myArrayCountry = "ALBANIA(AL) :ALGERIA(DZ) :AMERICAN SAMOA(AS) :ANTIGUA AND BARBUDA(AG) :ARMENIA(AM) :ARUBA(AW) :AUSTRIA(AT) :AZERBAIJAN(AZ) :BAHAMAS(BS) :BAHRAIN(BH) :BARBADOS(BB) :BELARUS(BY) :BELGIUM(BE) :BELIZE(BZ) :BENIN(BJ) :BERMUDA(BM) :BHUTAN(BT) :BOLIVIA(BO) :BOSNIA HERZEGOVINA(BA) :BOTSWANA(BW) :BRUNEI DARUSSALAM(BN) :BULGARIA(BG) :BURKINA FASO(BF) :BURUNDI(BI) :CAMBODIA(KH) :CAMEROON(CM) :CANADA(CA) :CAPE VERDE(CV) :CAYMAN ISLANDS(KY) :CENTRAL AFRICAN REPUBLIC(CF) :CHAD(TD) :CHILE(CL) :CHINA(CN) :CHRISTMAS ISLAND(CX) :COCOS KEELING ISLANDS(CC) :COMOROS(KM) :CONGO(CG) :COOK ISLANDS(CK) :COSTA RICA(CR) :CÔTE D'IVOIRE(CI) :CROATIA(HR) :CYPRUS(CY) :CZECH REPUBLIC(CZ) :CZECHOSLOVAKIA(CS) :DENMARK(DK) :DJIBOUTI(DJ) :DOMINICA(DM) :DOMINICAN REPUBLIC(DO) :ECUADOR(EC) :EGYPT(EG) :EL SALVADOR(SV) :EQUATORIAL GUINEA(GQ) :ERITREA(ER) :ESTONIA(EE) :FALKLAND ISLANDS MALVINAS(FK) :FAROE ISLANDS(FO) :FIJI(FJ) :FINLAND(FI) :FRANCE(FR) :FRENCH GUIANA(GF) :FRENCH POLYNESIA(PF) :GABON(GA) :GAMBIA(GM) :GEORGIA(GE) :GERMANY(DE) :GIBRALTAR(GI) :GREECE(GR) :GREENLAND(GL) :GRENADA(GD) :GUADELOUPE(GP) :GUAM(GU) :GUATEMALA(GT) :GUINEA BISSAU(GW) :GUINEA(GN) :GUYANA(GY) :HAITI(HT) :HONDURAS(HN) :HONG KONG(HK) :HUNGARY(HU) :ICELAND(IS) :ICELAND(NO) :INDIA(IN) :IRAN(IR) :IRAQ(IQ) :IRELAND(IE) :ISRAEL(IL) :ITALY(IT) :JAMAICA(JM) :JAPAN(JP) :JORDAN(JO) :KAZAKHSTAN(KZ) :KENYA(KE) :KIRIBATI(KI) :KOREA NORTH(KP) :KOREA SOUTH(KR) :KOREA(KR) :KUWAIT(KW) :KYRGYZSTAN(KG) :LATVIA(LV) :LEBANON(LB) :LESOTHO(LS) :LIBERIA(LR) :LITHUANIA(LT) :LUXEMBOURG(LU) :MACAO(MO) :MACEDONIA(MK) :MADAGASCAR(MG) :MALAWI(MW) :MALAYSIA(MY) :MALDIVES(MV) :MALI(ML) :MALTA(MT) :MARSHALL ISLANDS(MH) :MARTINIQUE(MQ) :MAURITANIA(MR) :MAURITIUS(MU) :MAYOTTE(YT) :MICRONESIA(FM) :MOLDOVA(MD) :MONACO(MC) :MONGOLIA(MN) :MONTSERRAT(MS) :MOROCCO(MA) :MOZAMBIQUE(MZ) :NAMIBIA(NA) :NAURU(NR) :NETHERLANDS ANTILLES(AN) :NETHERLANDS(NL) :NEW CALEDONIA(NC) :NICARAGUA(NI) :NIGER(NE) :NIGERIA(NG) :NIUE(NU) :NORWAY(NO) :OMAN(OM) :PANAMA(PA) :PAPUA NEW GUINEA(PG) :PARAGUAY(PY) :POLAND(PL) :PORTUGAL(PT) :PUERTO RICO(PR) :QATAR(QA) :ROMANIA(RO) :RUSSIA(RU) :RWANDA(RW) :SAINT HELENA(SH) :SAINT KITTS AND NEVIS(KN) :SAINT LUCIA(LC) :SAINT PIERRE AND MIQUELON(PM) :SAINT VINCENT AND THE GRENADINES(VC) :SAMOA(WS) :SÃO TOME AND PRINCIPE(ST) :SAUDI ARABIA(SA) :SENEGAL(SN) :SEYCHELLES(SC) :SIERRA LEONE(SL) :SINGAPORE(SG) :SLOVAKIA(SK) :SLOVENIA(SI) :SOMALIA(SO) :SOUTH AFRICA(ZA) :SPAIN(ES) :SRI LANKA(LK) :SUDAN(SD) :SURINAME(SR) :SWAZILAND(SZ) :SWEDEN(SE) :SWITZERLAND(CH) :SYRIAN ARAB REPUBLIC(SY) :TAIWAN(TW) :TAJIKISTAN(TJ) :TANZANIA(TZ) :THAILAND(TH) :TOGO(TG) :TONGA(TO) :TRINIDAD AND TOBAGO(TT) :TUNISIA(TN) :TURKEY(TR) :TURKMENISTAN(TM) :TURKS AND CAICOS ISLANDS(TC) :TUVALU(TV) :UGANDA(UG) :UKRAINE(UA) :UNITED ARAB EMIRATES(AE) :UNITED KINGDOM(GB) :UNITED STATES MINOR OUTLYING ISLANDS(UM) :UNITED STATES(UA) :UNITED STATES(US) :URUGUAY(UY) :UZBEKISTAN(UZ) :VANUATU(VU) :VENEZUELA(VE) :VIRGIN ISLANDS BRITISH(VG) :VIRGIN ISLANDS US(VI) :YEMEN(YE) :ZAMBIA(ZM) :ZIMBABWE(ZW) ";
+
+function manualAjax(ele){
+    var checkBoxId = $(ele).parent().find('input[type="radio"]').attr('id');
+        var labelClassChange= $("img[for='" + checkBoxId + "']").attr("class");
+        var inputvalue =0;
+        inputvalue = parseInt($('#'+checkBoxId).val(),10);
+        $("img[for='" + checkBoxId + "']").attr("src","");
+        if(labelClassChange == 'labelright'){
+            inputvalue = inputvalue - 1;
+            $("img[for='" + checkBoxId + "']").removeClass();
+            $("img[for='" + checkBoxId + "']").addClass('labelleft');
+            $("img[for='" + checkBoxId + "']").attr('src','/sasweb/images/LRedNew.png');
+            console.log("Changing Label Right");
+        }else{
+            inputvalue = inputvalue + 1;
+            $("img[for='" + checkBoxId + "']").removeClass();
+
+            $("img[for='" + checkBoxId + "']").attr('src','/sasweb/images/LGreenNew.png');
+            $("img[for='" + checkBoxId + "']").addClass('labelright');
+            console.log("Changing Label Left");
+        }
+        document.getElementById(checkBoxId).value = inputvalue;
+        var prefix=$('#txtPrefix').val();
+        var awb=$('#txtAirWaybill').val();
+        var docType=$('#'+checkBoxId).val();
+        var array;
+        var urls="manualchangeajax.jsp?prefix="+prefix+"&airwaybill="+awb+"&docType="+docType;
+    $.ajax({
+        type: "POST",
+        async: false,
+        url: urls,
+        success:function(result){
+            array = result.split("<manualtrigger>");
+            console.log("----"+array[1]);
+            if(array[1]=='red'){
+                $('#awbdocstatus').removeClass('green').addClass(array[1]);
+            }else{
+                $('#awbdocstatus').removeClass('red').addClass(array[1]);
+            }
+        }
     });
+}
+$(document).ready(function(){
+
+
+    if($('#copyRedirect').css('display') == 'block'){
+        setTimeout(function() { $('input[name="btnOldFlow"]').focus() }, 1000);
+    }
+    else{
+        setTimeout(function() { $('input[name="txtAirWaybill"]').focus() }, 1000);
+    }
+    $('#emailTo').focus();
+    //console.log("Changing Label");
+    setTimeout(function() { $('input[name="emailTo"]').focus() }, 1000);
+    /*$('td a.manual').click(function(event){
+        //console.log($(this).parent().find('input[type="radio"]').attr('id'));
+    });*/
+    document.getElementById('openuploadPopup').style.display = 'none';
+    document.getElementById('openFormPopup').style.display = 'none';
+    document.getElementById('openuploadPopupBG').style.display = 'none';
+    //event.preventDefault();
+});
 </script>
-        </p>
-
-
-        <p>
-
-        </p>
-
-
-
-        <p>
-
-        </p>
-
-    </div>
-</div>
-<div id="content_3_someID" class="intelecomchat">
-    <script src="https://chat.intele.com/Content/Client/js/jquery-intelecomchat.libs.latest.min.js"></script>
-   <script src="https://chat.intele.com/Content/Client/js/jquery-intelecomchat.latest.min.js"></script>
- <link rel="stylesheet" href="https://chat.intele.com/Content/Client/css/intelecom-light.css" type="text/css" />
-
 <style>
-       .intelecomchatheader  {background-color:#000099}
-       .intelecomchat__button{background:#000099;}
-       .intelecomchatstarter   {background-image:url(http://dev.sasweb.sascargo.com/sasweb/images/Chat-Support.png); border: none !important; width: 122px; height: 125px; background-size:200px; display:block !important;}
-        .intelecomStarterMiddle{bottom : 0% !important; top: 88% !important;}
-        .intelecomchatinner{font-size: 17px;}
-     </style>
+a.anc, a.anc:visited,a.anc:active {
+  color: inherit;
+}
+
+a.anc:hover {
+    background-color: none;
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a.anc {
+    font-size:12px;
+}
+
+label.font12{
+    font-size:12px !important;
+}
+
+.AddressBookClass {
+    display: none;
+    position: fixed;
+    top: 24%;
+    left: 1%;
+    width: 60%;
+    height: 297px;
+    padding: 25px;
+    border: 3px solid #0099FF;
+    border-radius: 25px;
+    background-color: white;
+    z-index:1002;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.AddressBookEditClass {
+    display: none;
+    position: fixed;
+    top: 24%;
+    left: 1%;
+    width: 58%;
+    height: 320px;
+    padding: 25px;
+    border: 3px solid #0099FF;
+     border-radius: 25px;
+    background-color: white;
+    z-index:1002;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.black_overlay_shared{
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #D0D0D0;
+    z-index:1234;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.AddressBookClassShared {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 1%;
+    width: 60%;
+    height: 297px;
+    padding: 25px;
+    border: 3px solid #0099FF;
+    border-radius: 25px;
+    background-color: white;
+    z-index:1234;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.AddressBookEditClassShared {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 1%;
+    width: 38%;
+    height: 320px;
+    padding: 25px;
+    border: 3px solid #0099FF;
+     border-radius: 25px;
+    background-color: white;
+    z-index:1234;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.hideImage {display:none; border:hidden}
+.showImage{display: ;}
+
+.awblink .tooltiptext {
+    font-size: 12px;
+    visibility: hidden;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2.5px;
+    color: grey;
+    text-align: center;
+    width: 365px;
+    padding: 5px;
+    right: -30px;
+    bottom: -40px;
+    background-color: white;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.awblink:hover,.awblink:focus .tooltiptext {
+    visibility: visible;
+}
+
+.awblink1 .tooltiptext1 {
+    font-size: 12px;
+    visibility: hidden;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2.5px;
+    color: grey;
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+    right: 60px;
+    bottom: -40px;
+    background-color: white;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.awblink1:hover,.awblink1:focus .tooltiptext1 {
+    visibility: visible;
+}
+
+#bookinga1:hover, #bookinga1:focus{border:none !important; outline:0 !important;}
+#awba1:hover, #awba1:focus{border:none !important; outline:0 !important;}
+
+</style>
+</head>
+
+    <body onLoad="resize();setTimeOutFuncMain();" tabindex="-1">
+
+<table>
+<tr>
+
+<div id="#maindiv">
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><font style="font-size: 14px; font-weight: bold;">Air Waybill Document Workflow</font></td>
+</tr>
+<tr>
+<td>
+<br />
 
 
-<div id="someID" class="intelecomchat"></div>
-     <script>
-    $(document).ready(function () {
-            $('#someID').intelecomChat({
-                    customerKey: '31796',
-                    queueKey: document.getElementById("lbluserCountryName").value,
-                    showForm: false,
-                //      msgClosedHeader: '', // text message
-                //      onContactCenterClosed: function(){}, //runs when closed
-                //      onChatStart: function(){}, //runs when clicking the chat button
-                //      onChatWindowShow: function(){}, //runs when chat window is displayed
-                //      onChatWindowMinimize: function(){},//runs when chat window's minimized
-                //      showForm: true, //enable user to enter name and e-mail at startup
-                //      showStarter: true, //displays the chat starter circle
-                //      delayStarterSeconds: 0, //delays the chat starter circle
-                //      showStarterWhenMinimized: true, //displays the chat starter circle
-                //      horizontalStarterPosition: 'right', //position the chat starter circle
-                //      verticalStarterPosition: 'middle', // position the chat starter circle
-                //      chatlink: '.chatstarter', //default class for chat button link
-                //      horizontalChatPosition: 'right', // positions the chat window
-                //      verticalChatPosition: 'bottom', // positions the chat window
-                        draggable: true, //enables user to move window
-                        resizable: true, //enables user to resize window
-                //      maxinfoMessageLength: 30, //enables to alter maximum status text width
-                //      nickName: '', //can be added from the web page
-                //      chatId: '', //can be added from the web page
-                //      chatIssue: '', //can be added from the web page
-                //      altQueueKey: '', //alternative queue to check for available agents
-                        languageCode: 'EN', //language settings (NO, SE, DK, EN)
-                //      showIntro: false, //to show intro text field at initiation
-                //      showAgentLoggedOnInIntro: false, //include "agents logged on" in intro
-                //      showAgentActiveInIntro: false, //include "active agents" in intro
-                //      showNumberInQueueInIntro: false, //include "number in queue" in intro
-                //      showVariablesInIntro: true, //include "variables" in intro
-                //      msgWelcomeHeader: '', //text message
-                //      msgWelcome: '', // text message
-                //      msgWelcomeFull: '', // text message
-                //      msgWelcomeEmpty: '', // text message
-                //      msgWelcomePause: '', // text message
-                //      msgReject: '', // text message
-                //      msgGoodbyeHeader: '', // text message
-                //      msgGoodbye: '', // text message
-                //      variables: {}, //variables to include in CRM popup
-                //      showSendEmail: true, //allows to show email option
-                //      emailSubject: 'my email subject text', //subject text to show in email
-                //      fromEmailDisplayName: 'Your Companies Name', //display name
-                //      emailPreText: 'Hello.[br][br]Thank you for speaking…',
-                //      emailPostText: 'If you require any further information…',
-                //      emailLogoUrl: 'http://mysite.com/pictures/logo.png',
-                //      emailLogoLink: 'http://www.intele.com/',
-                //      emailLogoAlt: 'Intelecom',
-                //      emailTopBackgroundColor: '#FFFFFF',
-                //      emailTopLineColor: '#555555',
-                //      emailTopBackgroundColor: '#FFFFFF',
-                //      emailBottomLineColor: '#555555',
-                //      emailTextStyle: 'font-size:9.0pt;font-family:\"Calibri\",sans-serif;',
-                //      emailTopBackgroundColor: '#FFFFFF',
-                //      onChatEnd: function(){}, // runs when closing chat window #1
-                //      onChatWindowClose: function(){}, //runs when closing chat window #2
-                    onChatStart: function () {
-                        $(this).intelecomChat('reloadOptions', {
-                            nickName: document.getElementById("lblUserName").innerHTML,
-                            chatId: document.getElementById("lbluserEmail").value,
-
-
-                        });
-                    }
-            });
-        });
-    </script>
-
-</div>
-
-
-                    </div>
-                    </div>
-                </div>
+<form name="frmRetriveAWB" method="post" action="awbworkflow_newUI.jsp" onload="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+<table style="border-collapse: collapse;" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td colspan="4">
 
 
 
@@ -566,62 +798,1581 @@ $(document).ready(function(){
 
 
 
-                <!--Added for google Analytics -->
-                <script>
-                      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-                      ga('create', 'UA-78962426-1', 'auto');
-                      ga('send', 'pageview');
-
-                </script>
 
 
 
+<table cellpadding="1" cellspacing="2">
+<tbody>
+<tr>
+<td valign="bottom"><font class="fieldLable">Prefix<span class="asterick">*</span></font></td>
+<td valign="bottom"><font class="fieldLable">Air
+Waybill<span class="asterick">*</span></font></td>
 
-<script type="text/javascript">
-//<![CDATA[
-Sys.Application.add_init(function() {
-    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"RadAjaxManager1","updatePanelsRenderMode":0}, null, null, $get("RadAjaxManager1"));
-});
-Sys.Application.add_init(function() {
-    $create(Telerik.Web.UI.RadToolTip, {"_cssClass":"","_manualCloseButtonText":"Close","clientStateFieldID":"topmenu_0_Base_Content_MenuBar_ToolTipPrint_ClientState","formID":"mainform","relativeTo":1,"skin":"SasCargo","targetControlID":"topmenu_0_Base_Content_MenuBar_linkPrint","width":"150px"}, null, null, $get("topmenu_0_Base_Content_MenuBar_ToolTipPrint"));
-});
-Sys.Application.add_init(function() {
-    $create(Telerik.Web.UI.RadToolTip, {"_cssClass":"","_manualCloseButtonText":"Close","clientStateFieldID":"topmenu_0_Base_Content_MenuBar_ToolTipSearch_ClientState","formID":"mainform","relativeTo":1,"skin":"SasCargo","targetControlID":"topmenu_0_Base_Content_MenuBar_linkSearch","width":"150px"}, null, null, $get("topmenu_0_Base_Content_MenuBar_ToolTipSearch"));
-});
-Sys.Application.add_init(function() {
-    $create(Telerik.Web.UI.RadToolTip, {"_cssClass":"","_manualCloseButtonText":"Close","clientStateFieldID":"topmenu_0_Base_Content_MenuBar_ToolTipContact_ClientState","formID":"mainform","relativeTo":1,"skin":"SasCargo","targetControlID":"topmenu_0_Base_Content_MenuBar_linkContact","width":"150px"}, null, null, $get("topmenu_0_Base_Content_MenuBar_ToolTipContact"));
-});
-//]]>
-</script>
+<td valign="bottom"></td>
+</tr>
+<tr>
+
+    <td>
+        <input name="txtPrefix" id="txtPrefix" type="text" class="optional"  value="117" maxlength="3" style="width: 35px;margin-bottom:0px !important;" />
+    </td>
+
+    <td>
+        <input class="optional" name="txtAirWaybill" title="Enter a valid Air Waybill." id="txtAirWaybill" accesskey="1" value=""  maxlength="8" type="text" style="width:160px"/>
+    </td>
+
+    <td>
+
+            <input type="submit" onClick="return validateForm();" class="btnClass2_sasgc" value="Search"  id="btnSearchAWB" name="btnSearchAWB" />
+
+    </td>
+    <td>
+
+            <input type="button" class="btnClass4_sasgc_disabled" tabindex="-1" value="Pending Documents" title="Please Search or Create an Air Waybill before this function is enabled."/>
+
+    </td>
+
+    <td>
+        <input type="button" class="btnClass4_sasgc" style="margin-left:5px !important" onclick="validateAWB()" onkeydown="if(event.keyCode == 13 || event.keyCode== 32){$(this).click();event.preventDefault();}" value="Create/Update Booking" title="Click to Create or Update booking." name="btnAssociatebk" id="btnAssociatebk" />
+    </td>
+
+    <td colspan="2">
+
+        <input type="button" class="btnClass4_sasgc_disabled" style="margin-left:5px !important" onclick="return false;" value="Copy Documents" title="" name="btnCopyDoc" id="btnCopyDoc" />
+
+    </td>
+</tr>
+
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 </form>
-        </div>
-        <div id="siteFooter">
-        <h1 style="color: white;">SAS</h1>
-            <div class="notInPrint">
+<br/>
+</td>
+</tr>
+</table>
+<input type="hidden" value="97-0 7777/0005" id="hiddenaccnum" name="hiddenaccnum"/>
+    <input type="hidden" name="addrTypeEmail" id="addrTypeEmail" value=""/>
+    <input type="hidden" name="addrnameEmail" id="addrnameEmail" value=""/>
+    <input type="hidden" name="addracnoEmail" id="addracnoEmail" value=""/>
+    <input type="hidden" name="addraddrEmail" id="addraddrEmail" value=""/>
+    <input type="hidden" name="addrcontEmail" id="addrcontEmail" value=""/>
+    <input type="hidden" name="addrstateEmail" id="addrstateEmail" value=""/>
+    <input type="hidden" name="addrcityEmail" id="addrcityEmail" value=""/>
+    <input type="hidden" name="addrpcodeEmail" id="addrpcodeEmail" value=""/>
+    <input type="hidden" name="addrphoneEmail" id="addrphoneEmail" value=""/>
+    <input type="hidden" name="addrfaxEmail" id="addrfaxEmail" value=""/>
+    <input type="hidden" name="addremailEmail" id="addremailEmail" value=""/>
+    <input type="hidden" name="focused_element" id="focused_element" value="emailTo"/>
+<input type="hidden" name="existingEmailFromAddressBook" id="existingEmailFromAddressBook" value=""/>
 
-<div class="BD_siteWidth FD_siteFooter BD_stdFloatLeft TD_footer">
-    <span id="footer_0_Base_Common_Footer1_lblCopyright">&#169; 2015 SAS Cargo Group</span>
-    <span id="footer_0_Base_Common_Footer1_lblDel1" class="textSeperatorLine"> | </span>
-    <a id="footer_0_Base_Common_Footer1_linkTerms" title="Terms and Conditions" href="/Misc/Terms-And-Conditions.aspx">Terms &amp; Conditions</a>
-    <span id="footer_0_Base_Common_Footer1_lblDel2" class="textSeperatorLine"> | </span>
-    <a id="footer_0_Base_Common_Footer1_linkPrivacy" title="Privacy Policy" href="/Misc/Privacy-Policy.aspx">Privacy Policy</a>
-    <span id="footer_0_Base_Common_Footer1_lblDel3" class="textSeperatorLine"> | </span>
-    <a id="footer_0_Base_Common_Footer1_linkCookies" title="Read about our cookie policy" href="/Misc/Cookies.aspx">Cookies</a>
-    <span id="footer_0_Base_Common_Footer1_lblDel4" class="textSeperatorLine"> | </span>
-    <a id="footer_0_Base_Common_Footer1_linkAboutSAS" title="About SAS Cargo" href="/Misc/About%20SAS%20Cargo.aspx">About SAS Cargo</a>
+    <input type="hidden" name="addrType" id="addrType" value=""/>
+    <input type="hidden" name="addrname" id="addrname" value=""/>
+    <input type="hidden" name="addracno" id="addracno" value=""/>
+    <input type="hidden" name="addraddr" id="addraddr" value=""/>
+    <input type="hidden" name="addrcont" id="addrcont" value=""/>
+    <input type="hidden" name="addrstate" id="addrstate" value=""/>
+    <input type="hidden" name="addrcity" id="addrcity" value=""/>
+    <input type="hidden" name="addrpcode" id="addrpcode" value=""/>
+    <input type="hidden" name="addrphone" id="addrphone" value=""/>
+    <input type="hidden" name="addrfax" id="addrfax" value=""/>
+    <input type="hidden" name="addremail" id="addremail" value=""/>
 
-    <a id="footer_0_Base_Common_Footer1_linkNews"></a>
-</div>
+<!--RFC SK234i Air Waybill Copy Functionality Starts Here-->
 
+    <div id="lightCopyDoc" class="white_content" style="top:100px !important;left:20px !important;width:1000px;height:420px;!important;display:none;">
+        <form name="copyRefForm" id="copyRefForm" method="post" >
+        <table cellpadding="3" style="width:950px;">
+            <tr></tr>
+            <tr>
+                <td colspan="4" style="font-weight: bold;">Please enter Air Waybill number or leave blank to retrieve from neutral stock.</td>
+                <td style="text-align:right;"><a size="5" style="text-decoration: none; cursor: pointer; font-size:15px;" title="Close" id="CopyCls" class="close" href="#" onclick="document.getElementById('txtAirwaybill_copy').value='';document.getElementById('lightCopyDoc').style.display='none';document.getElementById('fadeCopyRef').style.display='none';setTimeout(function(){$('#txtAirWaybill').focus();},100);" onkeydown="if(event.keyCode==13 || event.keyCode==32){$(this).click();event.preventDefault();}else if(event.keyCode==9 || (event.keyCode== 9 && event.shiftKey)){event.preventDefault();}">X</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="txtPrefix_copy" id="txtPrefix_copy" type="text" class="optional"  value="117" maxlength="3" style="width: 35px;margin-bottom:0px !important;" />
+                    <input class="optional" name="txtAirwaybill_copy" title="Enter a valid Air Waybill." id="txtAirwaybill_copy" value=""  maxlength="8" type="text" style="width:160px" onblur="airwaybillRefcheck()"/>
+                </td>
+            </tr>
+            </table>
+
+            <p><span style="color:red;font-weight: bold">Please enter the reference number for each document.</span></p>
+            <table id="CopyRefTable" cellpadding="3" style="width:1043px;table-layout: fixed;" >
+            <thead>
+            <tr>
+                <td style="font-weight: bold;text-align: center;width:10px;">Select</td>
+                <td style="font-weight: bold;text-align: center;">Document Type</td>
+                <td style="font-weight: bold;text-align: center;">Old Reference</td>
+                <td style="font-weight: bold;text-align: center;">Your Ref.</td>
+            </tr>
+            <thead>
+            <tbody></tbody>
+            <tfoot>
+            <tr><td></td></tr>
+            <!--<tr>
+                <td colspan="3" style="text-align:right"><input type="submit" class="btnClass4_sasgc" style="margin-left:5px !important" onclick="return CopyDocuments();" value="Copy Documents" title="Copy Documents" name="btnCopyDoc" id="btnCopyDoc" /></td>
+                <td><input type="button" class="btnClass2_sasgc" style="margin-left:5px !important" onclick="document.getElementById('lightCopyDoc').style.display='none';document.getElementById('fadeCopyRef').style.display='none';setTimeout(function(){$('#txtAirWaybill').focus();},100);" value="Close" title="Click to return to Air Waybill Workflow" name="btnCopycls" id="btnCopycls" /></td>
+            </tr> -->
+            </tfoot>
+        </table>
+        <table>
+        <tr>
+            <td style="width:69%;"></td>
+            <td colspan="3" style="text-align:right;padding-left:28px;"><input type="submit" class="btnClass4_sasgc" style="margin-left:5px !important" onclick="return CopyDocuments();" value="Copy Documents" title="Copy Documents" name="btnCopyDoc" id="btnCopyDoc" /></td>
+            <td><input type="button" class="btnClass2_sasgc" style="margin-left:5px !important" onclick="document.getElementById('txtAirwaybill_copy').value='';document.getElementById('lightCopyDoc').style.display='none';document.getElementById('fadeCopyRef').style.display='none';setTimeout(function(){$('#txtAirWaybill').focus();},100);" value="Close" title="Click to return to Air Waybill Workflow" name="btnCopycls" id="btnCopycls" /></td>
+        </tr>
+        </table>
+        </form>
+    </div>
+    <div class="black_overlay" id="fadeCopyRef"></div>
+
+
+<!--RFC SK234i Air Waybill Copy Functionality Ends Here-->
+
+
+
+
+
+
+
+<form name="docDetailsForm" id="docDetailsForm" method="post"  ng-app="sasApp" ng-controller="controller1" action="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Air Waybill&nonsecureawbpage=false" onsubmit="ShowProgress(0);" >
+<!--<font style="font-size:14px;font-weight:bold;">Shipment e-Docs</font>
+<br/>
+<br/>-->
+
+
+<div class="black_overlay_shared" id="fadeEmailPopupShared" style="display:none;"></div>
+
+<!-- ADDRESS BOOK SHARED EMAIL POP UP START-->
+<div name="addressBookEmailShared" id="addressBookEmailShared" class="AddressBookClassShared" style="display:none">
+
+ <table>
+ <tr><td><font style="font-size: 14px; font-weight: bold; margin-left: 407px;">Address Book Details</font></td>
+ <td style="width: 440px;"></td>
+ <td>
+ <a href="javascript:void(0)" id="clsAddrBookEmail" style="font-size: 15px;text-decoration: none; cursor: pointer;" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){resetSearchCloseSelectEmailShared();
+    }" onclick="resetSearchCloseSelectEmailShared();
+    ">X</a>
+ <td/>
+ </tr>
+ <tr></tr>
+ </table>
+
+
+<div style='height:236px;overflow-y:auto;overflow-x:auto;'>
+
+                <table  id="mytableEmailShared" class="alter_cell_table_sas" style="border-collapse:fixed;table-layout:fixed;margin-top: 24px;" >
+                    <col width="10px">
+                    <col width="25px">
+                    <col width="20px">
+                    <col width="22px">
+                    <col width="20px">
+                    <col width="20px">
+                    <col width="20px">
+                    <col width="15px">
+                    <col width="15px">
+                    <col width="15px">
+                    <col width="20px">
+                    <thead>
+                        <tr class="row_head">
+                            <td width="10px" class="tdStyle"><label color="white" ><b style="font-size: 12px;">Select</b></label></td>
+
+                            <td id="nameEmailShared" width="25px" title="Name" class="tdStyle"><label color="white"><b style="font-size: 12px;">Name</b><img id="imgNameEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+
+                            <td id="acnoEmailShared" width="20px" title="Account Number" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Account Number</b><img id="imgAcNoEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="addrEmailShared" width="22px" title="Address" class="tdStyle" ><label
+                                                color="white"><b style="font-size: 12px;">Address</b><img id="imgAddrEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="contEmailShared" width="20px" title="Country" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Country</b><img id="imgContEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="statEmailShared" width="20px" title="State" class="tdStyle" ><label
+                                                color="white"><b style="font-size: 12px;">State</b><img id="imgStEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="citEmailShared" width="20px" title="City" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">City</b><img id="imgCityEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="pcodeEmailShared" width="15px" title="Postal Code"  class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Postal Code</b><img id="imgPcodeEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="phnEmailShared" width="15px" title="Phone"  class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Phone</b><img id="imgPhnEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="faxnEmailShared" width="15px" title="Fax" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Fax</b><img id="imgFaxEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="emailidEmailShared" width="20px" title="Email" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Email</b><img id="imgMailEmailShared" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                        </tr>
+                        <tr class="tbsAddrEmailSearchShared">
+                            <td class="tdStyle"></td>
+                            <td class="tdStyle"><input type="text"  id="searchEmailShared" name="searchEmailShared"  value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search1EmailShared" name="search1EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search2EmailShared" name="search2EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search3EmailShared" name="search3EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search4EmailShared" name="search4EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search5EmailShared" name="search5EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search6EmailShared" name="search6EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search7EmailShared" name="search7EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search8EmailShared" name="search8EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search9EmailShared" name="search9EmailShared" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+                        </tr>
+                        </thead>
+                        <tbody id="fbodyEmail" class="tbodyAddrEmailShared">
+
+
+                        </tbody>
+
+                </table>
 
             </div>
-            <!--Campaign Ticker padding at the Bottom-->
-            <div class="paddingForCampaignTickerBottom"></div>
+<table>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td style="text-indent:-7px !important;"><input type="button" name="btnSelectEmail" id="btnSelectEmail" title="Select" value="Select" class="btnClass2_sasgc"
+                    onclick="checkEmailAddrRowSelectionSelectAllShared();" /></td>
+                    <td><input type="button" name="btnEditEmail" id="btnEditEmail" title="Edit" value="Edit" class="btnClass2_sasgc"
+                    onclick="editEmailAddressJSShared()" /></td>
+                    <td><input type="button" name="btnDeleteEmail" id="btnDeleteEmail" title="Delete" value="Delete" class="btnClass2_sasgc" onclick="checkEmailAddrRowSelectDelShared(3262);" /></td>
+                    <td><input type="button" name="btnAddrCloseEmail" id="btnAddrCloseEmail" title="Close" value="Close" class="btnClass2_sasgc" onclick="resetSearchCloseSelectEmailShared();" /></td>
+                </tr>
+                </table>
+</div>
+<!-- ADDRESS BOOK EMAIL SHARED POP UP END-->
 
+<!--ADDRESS BOOK EMAIL SHARED EDIT DETAILS-->
+<div id="addressBookEditEmailShared" name="addressBookEditEmailShared" class="AddressBookEditClassShared">
+    <div  style="position: absolute;">
+    <table>
+    <tr><td><font style="font-size: 14px; font-weight: bold;">Address Book Details</font></td>
+    <td style="width:441px;"></td>
+    <td>
+    <a href="javascript:void(0)" id="clsAddrBookEdit" style="font-size: 15px; text-decoration: none; cursor: pointer;" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){document.getElementById('addressBookEditEmailShared').style.display = 'none';document.getElementById('fadeEmailPopupShared').style.display = 'none';$('input[name=addrSelectionRadioEmailShared]').attr('checked',false);event.preventDefault();}" onclick="document.getElementById('addressBookEditEmailShared').style.display = 'none';document.getElementById('fadeEmailPopupShared').style.display = 'none';$('input[name=addrSelectionRadioEmailShared]').attr('checked',false);event.preventDefault();">X</a>
+    <td/>
+    </tr>
+
+    </table>
+    </div>
+    <table>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    </table>
+    <div id="addressEditEmailBodyShared">
+        <table border="0" cellpadding="2" cellspacing="0">
+            <thead></thead>
+                <tbody>
+
+                <tr>
+                    <td valign="bottom"><font class="fieldLabelCustom">Account No.</font></td>
+                    <td valign="bottom" ><font class="fieldLabelCustom">Name</font></td>
+                </tr>
+                <tr>
+                    <td valign="top"><input class=" eidtableText frmElement IsNumber"  name="txtEditEmailAccShared"
+                            id="txtEditEmailAccShared" value=""
+                            title="" style="width: 120px;" maxlength="15"
+                            type="text"></td>
+                    <td colspan="2"><input class="eidtableText  frmElement" onchange="clearTimeOut();" name="txtEditEmailNameShared"
+                            value="" id="txtEditEmailNameShared" maxlength="30"
+                            title="" style="width: 200px" type="text"></td>
+
+                    <td style="padding-bottom:10px !important;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><font class="fieldLabelCustom">Address</font></td>
+
+                    <td><font class="fieldLabelCustom">Country</font></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input  class="eidtableText  frmElement hidmndtryCheck" name="txtEditEmailAddrShared" id="txtEditEmailAddrShared"
+                        value="" title="" onchange="clearTimeOut();"  maxlength="35"
+                        style="width: 250px" maxlength="35" type="text"/></td>
+                    <td valign="top"><input name="txtEditEmailCountryShared"
+                        type="text" class="eidtableText  frmElement IsAlphaSpace hidmndtryCheck" title="Search is based on first 3 letters."  id="txtEditEmailCountryShared" maxlength="25"
+                        value="" style="width: 120px" /></td>
+                    <script type="text/javascript">
+                    $(document).ready(function(){
+                    myArrayCountry= "ALBANIA(AL) :ALGERIA(DZ) :AMERICAN SAMOA(AS) :ANTIGUA AND BARBUDA(AG) :ARMENIA(AM) :ARUBA(AW) :AUSTRIA(AT) :AZERBAIJAN(AZ) :BAHAMAS(BS) :BAHRAIN(BH) :BARBADOS(BB) :BELARUS(BY) :BELGIUM(BE) :BELIZE(BZ) :BENIN(BJ) :BERMUDA(BM) :BHUTAN(BT) :BOLIVIA(BO) :BOSNIA HERZEGOVINA(BA) :BOTSWANA(BW) :BRUNEI DARUSSALAM(BN) :BULGARIA(BG) :BURKINA FASO(BF) :BURUNDI(BI) :CAMBODIA(KH) :CAMEROON(CM) :CANADA(CA) :CAPE VERDE(CV) :CAYMAN ISLANDS(KY) :CENTRAL AFRICAN REPUBLIC(CF) :CHAD(TD) :CHILE(CL) :CHINA(CN) :CHRISTMAS ISLAND(CX) :COCOS KEELING ISLANDS(CC) :COMOROS(KM) :CONGO(CG) :COOK ISLANDS(CK) :COSTA RICA(CR) :CÔTE D'IVOIRE(CI) :CROATIA(HR) :CYPRUS(CY) :CZECH REPUBLIC(CZ) :CZECHOSLOVAKIA(CS) :DENMARK(DK) :DJIBOUTI(DJ) :DOMINICA(DM) :DOMINICAN REPUBLIC(DO) :ECUADOR(EC) :EGYPT(EG) :EL SALVADOR(SV) :EQUATORIAL GUINEA(GQ) :ERITREA(ER) :ESTONIA(EE) :FALKLAND ISLANDS MALVINAS(FK) :FAROE ISLANDS(FO) :FIJI(FJ) :FINLAND(FI) :FRANCE(FR) :FRENCH GUIANA(GF) :FRENCH POLYNESIA(PF) :GABON(GA) :GAMBIA(GM) :GEORGIA(GE) :GERMANY(DE) :GIBRALTAR(GI) :GREECE(GR) :GREENLAND(GL) :GRENADA(GD) :GUADELOUPE(GP) :GUAM(GU) :GUATEMALA(GT) :GUINEA BISSAU(GW) :GUINEA(GN) :GUYANA(GY) :HAITI(HT) :HONDURAS(HN) :HONG KONG(HK) :HUNGARY(HU) :ICELAND(IS) :ICELAND(NO) :INDIA(IN) :IRAN(IR) :IRAQ(IQ) :IRELAND(IE) :ISRAEL(IL) :ITALY(IT) :JAMAICA(JM) :JAPAN(JP) :JORDAN(JO) :KAZAKHSTAN(KZ) :KENYA(KE) :KIRIBATI(KI) :KOREA NORTH(KP) :KOREA SOUTH(KR) :KOREA(KR) :KUWAIT(KW) :KYRGYZSTAN(KG) :LATVIA(LV) :LEBANON(LB) :LESOTHO(LS) :LIBERIA(LR) :LITHUANIA(LT) :LUXEMBOURG(LU) :MACAO(MO) :MACEDONIA(MK) :MADAGASCAR(MG) :MALAWI(MW) :MALAYSIA(MY) :MALDIVES(MV) :MALI(ML) :MALTA(MT) :MARSHALL ISLANDS(MH) :MARTINIQUE(MQ) :MAURITANIA(MR) :MAURITIUS(MU) :MAYOTTE(YT) :MICRONESIA(FM) :MOLDOVA(MD) :MONACO(MC) :MONGOLIA(MN) :MONTSERRAT(MS) :MOROCCO(MA) :MOZAMBIQUE(MZ) :NAMIBIA(NA) :NAURU(NR) :NETHERLANDS ANTILLES(AN) :NETHERLANDS(NL) :NEW CALEDONIA(NC) :NICARAGUA(NI) :NIGER(NE) :NIGERIA(NG) :NIUE(NU) :NORWAY(NO) :OMAN(OM) :PANAMA(PA) :PAPUA NEW GUINEA(PG) :PARAGUAY(PY) :POLAND(PL) :PORTUGAL(PT) :PUERTO RICO(PR) :QATAR(QA) :ROMANIA(RO) :RUSSIA(RU) :RWANDA(RW) :SAINT HELENA(SH) :SAINT KITTS AND NEVIS(KN) :SAINT LUCIA(LC) :SAINT PIERRE AND MIQUELON(PM) :SAINT VINCENT AND THE GRENADINES(VC) :SAMOA(WS) :SÃO TOME AND PRINCIPE(ST) :SAUDI ARABIA(SA) :SENEGAL(SN) :SEYCHELLES(SC) :SIERRA LEONE(SL) :SINGAPORE(SG) :SLOVAKIA(SK) :SLOVENIA(SI) :SOMALIA(SO) :SOUTH AFRICA(ZA) :SPAIN(ES) :SRI LANKA(LK) :SUDAN(SD) :SURINAME(SR) :SWAZILAND(SZ) :SWEDEN(SE) :SWITZERLAND(CH) :SYRIAN ARAB REPUBLIC(SY) :TAIWAN(TW) :TAJIKISTAN(TJ) :TANZANIA(TZ) :THAILAND(TH) :TOGO(TG) :TONGA(TO) :TRINIDAD AND TOBAGO(TT) :TUNISIA(TN) :TURKEY(TR) :TURKMENISTAN(TM) :TURKS AND CAICOS ISLANDS(TC) :TUVALU(TV) :UGANDA(UG) :UKRAINE(UA) :UNITED ARAB EMIRATES(AE) :UNITED KINGDOM(GB) :UNITED STATES MINOR OUTLYING ISLANDS(UM) :UNITED STATES(UA) :UNITED STATES(US) :URUGUAY(UY) :UZBEKISTAN(UZ) :VANUATU(VU) :VENEZUELA(VE) :VIRGIN ISLANDS BRITISH(VG) :VIRGIN ISLANDS US(VI) :YEMEN(YE) :ZAMBIA(ZM) :ZIMBABWE(ZW)  ";
+
+                                autocomp_retriveStateAddressBookSelectAll("txtEditEmailCountryShared","txtEditEmailStateShared","txtEditEmailCityShared");
+
+                                    $("#txtEditEmailCountryShared").blur(function(){
+
+                                    setTimeout(function() { autocomp_retriveStateAddressBookSelectAll("txtEditEmailCountryShared","txtEditEmailStateShared","txtEditEmailCityShared") } ,100);
+                                      });
+
+                             autocomp_countrySelectAll(myArrayCountry.split(":"),'txtEditEmailCountryShared',3);
+                            });
+
+                     </script>
+
+                </tr>
+                <tr>
+                    <td><font class="fieldLabelCustom">State</font></td>
+                    <td><font class="fieldLabelCustom">City</font></td>
+                    <td><font class="fieldLabelCustom">Postal Code</font></td>
+                </tr>
+
+                <tr>
+                    <TD valign="top"><input type="text"
+                        class="eidtableText frmElement IsAlphaSpace" title="Search is based on first 2 letters."
+                        id="txtEditEmailStateShared" value=""
+                        style="width: 120px" maxlength="25" name="txtEditEmailStateShared" /></TD>
+
+                    <TD valign="top"><input type="text" maxlength="25"
+                        class="eidtableText  frmElement IsAlphaSpace hidmndtryCheck"  title="Search is based on first 3 letters."
+                        id="txtEditEmailCityShared" name="txtEditEmailCityShared"
+                        value="" style="width: 120px" /></TD>
+                    <script type="text/javascript">
+                    $("#txtEditEmailCityShared").focus(function(){
+                    autocomp_citySelectAll("txtEditEmailCountryShared","txtEditEmailStateShared","txtEditEmailCityShared");
+                    });
+
+                    $("#txtEditEmailCountry").blur(function(){
+
+                    autocomp_citySelectAll("txtEditEmailCountryShared","txtEditEmailStateShared","txtEditEmailCityShared");
+                                  });
+
+                    </script>
+
+                    <td><input  class="eidtableText  frmElement IsAlphaNum hidmndtryCheck"
+                        name="txtEditEmailPcodeShared" id="txtEditEmailPcodeShared" maxlength="10"
+                        value="" onchange="clearTimeOut();" title=""
+                        style="width: 120px" type="text"></td>
+                </tr>
+                <tr>
+                    <td><font class="fieldLabelCustom">Phone</font></td>
+                    <td><font class="fieldLabelCustom">Fax</font></td>
+                    <td><font class="fieldLabelCustom">E-mail</font></td>
+                </tr>
+                <tr>
+                    <td><input class="eidtableText frmElement IsNumPlusMinus "
+                            name="txtEditEmailPhoneShared" id="txtEditEmailPhoneShared"
+                            value="" onchange="clearTimeOut();" title="" maxlength="15"
+                            style="width: 120px" type="text"></td>
+                    <td><input class="eidtableText frmElement IsNumPlusMinus"
+                            name="txtEditEmailFaxShared" id="txtEditEmailFaxShared"
+                            value=""  title="" maxlength="15"
+                            style="width: 120px" type="text"></td>
+                    <td><input class="eidtableText  frmElement NotSpace"
+                            name="txtEditEmailEmailShared" id="txtEditEmailEmailShared"
+                            value="" onchange="clearTimeOut();" title="" maxlength="50"
+                            style="width: 370px" type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td style="text-indent:-5px !important;"><input type="button" name="btnSaveAddr" id="btnSaveAddr" title="Save" value="Save" class="btnClass2_sasgc"
+            onclick="editEmailAddrShared(3262)" /></td>
+            <td><input type="button" name="btnCloseAddr" id="btnCloseAddr" title="Close" value="Close" class="btnClass2_sasgc"
+            onclick="$('input[name=addrSelectionRadioEmailShared]').attr('checked',false);document.getElementById('addressBookEditEmailShared').style.display = 'none';document.getElementById('fadeEmailPopupShared').style.display = 'none';event.preventDefault();" /></td>
+        </tr>
+    </table>
+</div>
+<!--ADDRESS BOOK EMAIL EDIT DETAILS-->
+
+<!-- Email block for sharing Resource-->
+<div id="lightEmailShareDoc" class="white_contenthideEmail" style="top:20px !important;left:10px !important;width:1230px;height:620px;!important;">
+<table cellpadding="3">
+<tr>
+<td colspan="3" style="text-align:right;opacity:0.5;width:970px;"><a href = "javascript:void(0)" tabindex="115" CLASS="NoPreventDefault" id="emailAwbClsSD" onclick = "if(closeShareDocEmailPopUP()){setTimeout(function(){$('#txtAirWaybill').focus();},100);event.preventDefault();}" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$(this).click(); setTimeout(function(){$('#txtAirWaybill').focus();},100);event.preventDefault();}">X</a></td>
+</tr>
+<tr>
+<td>
+<table >
+
+<tr>
+<td style="border:none;" class="fieldLabelCustom"><input type="submit"  tabindex="115" id="awbEmailSendSD" name="SendbuttonSD" style="height: 70px !important;" value="Send" onkeydown="if(event.keyCode == 13 || event.keyCode== 32){$(this).click();event.preventDefault();}" onclick="if(emailValidationCheckSharedDoc())return true; else return false;" /></td>
+<input type="hidden" name="emailvalidatn" id="emailvalidatn" value="true" />
+
+</tr>
+
+
+</table>
+</td>
+<td>
+<table cellpadding="3">
+<tr>
+<td><table style="/*border: 1px solid;border-color:#C0C0C0;*/width:45px;"><tr><td class="fieldLabelCustom">To</td></tr></table></td><td><input type="text" name="emailToSD" id="emailToSD"    class="notHover" style="width:832px;" tabindex="115" onkeyup="suggestiveSearchEmail_EMAILTO('emailToSD','3262');"></td>
+<td valign="center" style="width: 148px;margin-right:18px"><input style="margin-left:24px" type="button" class="btnClass4_sasgc" name="btnAddressBook2"
+                                            value="Add to Address Book" id="btnAddressBook2" onclick="addEmailToAddressBookShared(3262);"
+                                            title="Add to Address Book" tabindex="102">
+                                        </td>
+
+<td style="padding-bottom:5px;padding-left:30px; !important;">
+                                            <img src="/sasweb/images/address.png" alt="Address Book" title="Address Book" style="cursor:pointer;" name="addrBook2" id="addrBook2" onclick="$('input[name=addrSelectionRadioEmailShared]').attr('checked',false);addressBookEmailRetrieveShared('3262')" tabindex="103">
+                                            <br><font style="color: cadetblue; font-size: 12px;margin-left:-24px">Address Book</font>
+</td>
+</tr>
+
+<tr>
+<td class="fieldLabelCustom" style="text-align: left;font-size:75%; !important;">Subject</td><td><input type="text" name="emailSubjectSD" id="emailSubjectSD" class="notHover" style="width:832px" tabindex="115" value="117- Access to documents related to your shipment."></td>
+</tr>
+
+            <tr>
+                    <td class="fieldLabelCustom" style="text-align: left;font-size:75%; !important;">Link </td>
+                    <td>
+                        <font style="font-family:Arial;font-size:14px;">
+                            <p><a href=""  title="" id="awbEmailLinkSD"  onkeydown="" style="cursor:text;"  tabindex="115" >Click here to access the shared document(s)</a></p>
+                        </font>
+                    </td>
+                </tr>
+        </table>
+    </td>
+</tr>
+    <tr>
+        <td colspan="2">
+            <table>
+
+                <tr>
+                    <td colspan="3">
+                        <font style="font-family:Arial;font-size:14px;">
+                            <!--<textarea style="width:940px;height:395px;white-space: pre-wrap;font-size: small;" class="notHover DontPreventDefault AcceptTab" id="emailBodySD" name="emailBodySD"  tabindex="115"  >Dear Customer,
+
+                                                                               Your forwarder Zeberg and Kim wants to grant you access to information related to your latest shipment with Air Waybill no : 117-.
+                                                                               Kindly use the provided link for access and further information.
+
+                                                                               Best regards,
+                                                                               SAS Cargo Document Manager</textarea>-->
+                        <textarea name="emailBodySD" tabindex="115" class="notHover DontPreventDefault AcceptTabSD" id="emailBodySD" style="width: 940px; height: 395px; font-size: small; white-space: pre-wrap;">Dear Customer,
+
+Your forwarder Zeberg and Kim  wants to grant you access to information related to your latest shipment with Air Waybill no : 117-.
+
+Kindly use the provided link for access and further information.
+                            </textarea>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</div>
+
+<table cellspacing="1" style="margin-left:-3px;">
+
+<tr>
+<TD>
+<input  style="margin-left: 0px; !important" type="button" id="AirWaybillForm" class="btnClass2_sasgc"  name="btnForm"  onClick="if($('#AirWaybillForm').hasClass('btnClass2_sasgc')){openFormCreationPop();}else{return false;}"   value="Create"  />
+</TD>
+<TD>
+<input  type="button"  onClick="if($('#btnUploadFileAirWaybill').hasClass('btnClass2_sasgc')){return openUploadFilePop();}else{return false;}" name="btnForm" id="btnUploadFileAirWaybill" class="btnClass2_sasgc"  value="Upload" title="Upload" />
+</TD>
+</tr>
+<tr height="10px;"></tr>
+
+<tr>
+
+
+
+<td>
+<input type="submit" class="btnClass2_sasgc_disabled"   tabindex="-1" title="Please Search or Create an Air Waybill before this function is enabled." onClick="return false;" value="Download" name="btnDownload"  id="btnDownload" style="margin-left: 0px; !important" />
+
+</td>
+<td>
+<input type="submit" class="btnClass2_sasgc_disabled"  tabindex="-1" title="Please Search or Create an Air Waybill before this function is enabled."  onClick="return false" value="E-mail"  id="btnEMail" name="btnEMail" />
+</td>
+<TD>
+<input type="submit" class="btnClass2_sasgc_disabled" onClick="return false;"  tabindex="-1" title="Please Search or Create an Air Waybill before this function is enabled." value="Remove"   />
+</TD>
+<TD>
+<input type="submit" class="btnClass2_sasgc_disabled" onClick="return false;"  tabindex="-1" title="Please Search or Create an Air Waybill before this function is enabled." value="Delete"  />
+</TD>
+<TD>
+<input type="button" class="btnClass2_sasgc_disabled"  tabindex="-1" onclick="return false;" name="btnGrantCntl" title="Click to grant control."  id="btnGrantCntl" value="Grant Control"  />
+</TD>
+<TD>
+<input type="submit" class="btnClass2_sasgc_disabled"  tabindex="-1" onclick="return false;" name="btnRevokeCntl" title="Click to revoke control."  id="btnRevokeCntl" value="Revoke Control"  />
+</TD>
+</tr>
+</table>
+<br/>
+
+
+
+
+<div id="openFormPopup" class="white_openuploadPopup" style="color:blue;overflow:hidden;diplay:none;width:35%;">
+<table width="96%" cellspacing="1" style="border: 1px solid white !important; margin-top: 5px;margin-left: 5px;" class="alter_cell_table_sas" cellpadding="2" border="0">
+<tbody>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;text-align:right" onClick="document.getElementById('openFormPopup').style.display = 'none';document.getElementById('openuploadPopupBG').style.display = 'none'" ><a style="text-decoration: none; cursor: pointer; font-size:15px;" tabindex="102" id="clsNoAWB" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){document.getElementById('openFormPopup').style.display = 'none';document.getElementById('openuploadPopupBG').style.display = 'none';event.preventDefault();}">X</a></td>
+</tr>
+
+
+<tr>
+    <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openAirWaybillForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="awbNoAWB" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#awbNoAWB').click();}">Air Waybill</a></td>
+</tr>
+
+
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openCreateProformaInvoiceForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="proNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#proNoAWB').click();}">Proforma Invoice</a></td>
+</tr>
+
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openCreateCommercialInvoiceForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="comNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#comNoAWB').click();}">Commercial Invoice</a></td>
+</tr>
+
+
+<tr>
+<td style = "color:grey; border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return false;">Packing List</td>
+</tr>
+
+<!--<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openExportGoodsForm('','','create');"><a style="text-decoration: none; cursor: pointer;">Export Goods Declaration</a></td>
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openExportCargoForm('','','create');"><a style="text-decoration: none; cursor: pointer;">Export Cargo Declaration</a></td>
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openCustomReleaseForm('','','create');"><a style="text-decoration: none; cursor: pointer;">Customs Release Export</a></td>
+</tr> -->
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openHouseWaybillForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="hawbNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#hawbNoAWB').click();}">House Waybill</a></td>
+</tr>
+
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openHouseManifestForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="manfstNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#manfstNoAWB').click();}">House Manifest</a></td>
+</tr>
+
+<tr>
+
+<!--
+<td style = "color:grey; border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return false;">Shippers Letter Of Instruction</td>-->
+
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openShippersDeclarationForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="shpdeclNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#shpdeclNoAWB').click();}">Shippers Dangerous Goods Declaration</a></td>
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openLiveAnimalsForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="lvAnmlNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#lvAnmlNoAWB').click();}">Shippers Declaration for Live Animals</a></td>
+</tr>
+<!--<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openCITESCertificateForm('','','create');"><a style="text-decoration: none; cursor: pointer;">CITES Certificate</a></td>
+</tr>-->
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openSecurityDeclarationForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="secdeclNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#secdeclNoAWB').click();}">Security Declaration</a></td>
+</tr>
+<!--<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openTransitDeclarationForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;">Transit Declaration</a></td>
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openImportCargoDecForm('','','create');"><a style="text-decoration: none; cursor: pointer;">Import Cargo Declaration</a></td>
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openImportGoodsDecForm('','','create');"><a style="text-decoration: none; cursor: pointer;">Import Goods Declaration</a></td>
+</tr>
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openCustomReleaseForm('','','create');"><a style="text-decoration: none; cursor: pointer;">Customs Release Import</a></td>
+</tr>-->
+<tr>
+<td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openProofOfDeliveryForm( '' , '' ,'create');"><a style="text-decoration: none; cursor: pointer;"  tabindex="102" id="podNoAWB"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#podNoAWB').click();}">Proof Of Delivery</a></td>
+</tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+
+
+
+
+<!-- POP up for upload new doc selection start-->
+<div id="openuploadPopup" class="white_openuploadPopup" style="color:blue;overflow:hidden;diplay:none;">
+    <table width="96%" cellspacing="1" id="openuploadPopupTable" style="border: 1px solid white !important; margin-top: 5px;margin-left: 5px;" class="alter_cell_table_sas" cellpadding="2" border="0">
+        <tbody>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;text-align:right" onClick="document.getElementById('openuploadPopup').style.display = 'none';document.getElementById('openuploadPopupBG').style.display = 'none';setTimeout(function(){$('#txtAirWaybill').focus();},100);event.preventDefault();"><a style="text-decoration: none; cursor: pointer; font-size:15px;" id="clsUploadwithAWB"  tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){document.getElementById('openuploadPopup').style.display = 'none';document.getElementById('openuploadPopupBG').style.display = 'none';setTimeout(function(){$('#txtAirWaybill').focus();},100);event.preventDefault();}" >X</a></td>
+        </tr>
+
+
+            <tr>
+                <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Air Waybill');"><a style="text-decoration: none; cursor: pointer;"  id="awbUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#awbUpload').click();event.preventDefault();}" >Air Waybill</a></td>
+            </tr>
+
+
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Proforma Invoice');"><a style="text-decoration: none; cursor: pointer;" id="proUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#proUpload').click();event.preventDefault();}" >Proforma Invoice</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Commercial Invoice');"><a style="text-decoration: none; cursor: pointer;" id="comUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#comUpload').click();event.preventDefault();}" >Commercial Invoice</a></td>
+        </tr>
+
+        <tr>
+            <td style = "color:grey;border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return false;">Packing List</td>
+        </tr>
+
+
+
+
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Export Goods Declaration');"><a style="text-decoration: none; cursor: pointer;"  id="expGdsUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#expGdsUpload').click();event.preventDefault();}" >Export Goods Declaration</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Export Cargo Declaration');"><a style="text-decoration: none; cursor: pointer;"  id="expCrgUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#expCrgUpload').click();event.preventDefault();}" >Export Cargo Declaration</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Customs Release Export');"><a style="text-decoration: none; cursor: pointer;"  id="cstExpUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#cstExpUpload').click();event.preventDefault();}" >Customs Release Export</a></td>
+        </tr>
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('House Waybill');"><a style="text-decoration: none; cursor: pointer;"  id="hawbUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#hawbUpload').click();event.preventDefault();}" >House Waybill</a></td>
+        </tr>
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('House Manifest');"><a style="text-decoration: none; cursor: pointer;"  id="manfUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#manfUpload').click();event.preventDefault();}" >House Manifest</a></td>
+        </tr>
+
+
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Shippers Letter Of Instruction');"><a style="text-decoration: none; cursor: pointer;"  id="shpLetrUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#shpLetrUpload').click();event.preventDefault();}" >Shippers Letter Of Instruction</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('CITES Certificate');"><a style="text-decoration: none; cursor: pointer;" id="citesUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#citesUpload').click();event.preventDefault();}" >CITES Certificate</a></td>
+        </tr>
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Shippers Dangerous Goods Declaration');"><a style="text-decoration: none; cursor: pointer;"  id="shpDeclUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#shpDeclUpload').click();event.preventDefault();}" >Shippers Dangerous Goods Declaration</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Shippers Declaration for Live Animals');"><a style="text-decoration: none; cursor: pointer;"  id="liveAnmUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#liveAnmUpload').click();event.preventDefault();}" >Shippers Declaration for Live Animals</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Security Declaration');"><a style="text-decoration: none; cursor: pointer;" id="secDeclUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#secDeclUpload').click();event.preventDefault();}" >Security Declaration</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Transit Declaration');"><a style="text-decoration: none; cursor: pointer;" id="trstUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#trstUpload').click();event.preventDefault();}" >Transit Declaration</a></td>
+        </tr>
+
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Import Cargo Declaration');"><a style="text-decoration: none; cursor: pointer;"  id="inpCrgUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#inpCrgUpload').click();event.preventDefault();}" >Import Cargo Declaration</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Import Goods Declaration');"><a style="text-decoration: none; cursor: pointer;" id="impGdsUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#impGdsUpload').click();event.preventDefault();}" >Import Goods Declaration</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Customs Release Import');"><a style="text-decoration: none; cursor: pointer;"  id="cstRlsImpUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#cstRlsImpUpload').click();event.preventDefault();}" >Customs Release Import</a></td>
+        </tr>
+        <tr>
+            <td style = "border-right-color: white !important; border-bottom-color: white !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-right-style: solid !important; border-bottom-style: solid !important;" onClick="return openUploadFileNew('Proof Of Delivery');"><a style="text-decoration: none; cursor: pointer;"  id="podUpload" tabindex="100" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#podUpload').click();event.preventDefault();}" >Proof Of Delivery</a></td>
+        </tr>
+
+</tbody>
+
+</table>
+</div>
+<div id="openuploadPopupBG" class="black_overlay" style="diplay:block;">
+</div>
+
+</form>
+
+
+
+
+<!-- POP up for upload new doc selection end-->                                                                                                            <!--
+</fieldset>
+-->
+
+
+
+
+
+<div id="light11" class="white_content" style="top:0px !important">
+
+
+
+
+
+<table class="statusTable" style="margin-bottom:15px;">
+<tr>
+
+
+    <td nowrap id="uploadStatus"></td>
+
+</tr>
+</table>
+
+
+<table width="1080px;">
+<tr>
+<td style="font-weight: bold;font-size:14px;" nowrap id="txtDocType" width="98%"></td>
+<td width="2%"><a size="" style="padding-top:-50px;" title="Close popup." class="close" href="#maindiv" onclick="document.getElementById('light11').style.display='none';document.getElementById('fade').style.display='none';$('#txtAirWaybill').focus();" tabindex="101" id="uploadPopUpX" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#uploadPopUpX').click();$('#txtAirWaybill').focus();}">X</a></td>
+</tr>
+</table>
+
+
+<table style="color:red;">
+<tr>
+<td id="validatorId" nowrap>
+
+</td>
+</tr>
+</table>
+
+
+<form action="upload_file_servlet.jsp" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return ValidateFileExtensions(this,'null');">
+
+<hr>
+
+
+
+
+
+
+<input type="hidden" id="txtDocType1" name="txtDocType1" value="" />
+<table width="500px;" cellpadding="0" cellspacing="0" style="font-size:14px;">
+<tr>
+
+
+<td nowrap width="1%">
+<b>Account&nbsp;Number&nbsp;:&nbsp;</b>
+</td>
+
+<td nowrap width="2%" style="text-align:left">
+<b>  97-0 7777/0005 </b>
+</td>
+<td>
+
+</td>
+<td nowrap width="1%">
+<b>Company&nbsp;Name&nbsp;:&nbsp;</b>
+</td>
+
+<td nowrap width="2%" style="text-align:left">
+<b>   Zeberg and Kim </b>
+</td>
+<!--
+<td width="5%" style="text-align:center;font-size:10px;">|</td>
+
+<td nowrap width="7%">
+<b>Version&nbsp;:</b>
+</td>
+
+<td nowrap width="10%" style="text-align:left">
+1
+</td>
+-->
+</tr>
+
+</table>
+
+
+
+
+
+<table id="addrowsTable" width="1030px;" cellpadding="0" cellspacing="0" style="font-size:14px;">
+    <tbody>
+        <tr height="20px;">
+        </tr>
+        <tr>
+            <td class="delete" style="text-align:left;" width="2%"></td>
+
+            <td align="left" colspan=1 nowrap width="13.5%" id="txtDocTypeBrowse1">
+                Your Ref <span class="asterick">*</span>
+            </td>
+
+            <td align="left" colspan=1 nowrap style="font-size:14px;" width="27%">
+                Comments
+            </td>
+
+            <td id="txtDocTypeBrowse" width="50%">
+                <span class="asterick">*</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="2%"></td>
+            <td align="left" width="13.5%">
+                <input type="text" CLASS="frmElement IsAlphaNum NotSpace" maxlength="20" id="referenceNumber1"  name="referenceNumber1" title="Reference number created by you."  tabindex="101"/>
+            </td>
+
+            <td align="left" width="27%">
+                <input size="45" type="text" CLASS="frmElement NoHash" maxlength="40" id="comments1" name="comments1" value="" title=""  tabindex="101"/>
+            </td>
+
+            <td align="left" height="30px" width="60%">
+                <div class="fileinputs">
+                    <input style='width: 380px;' name="docMgrFile1" accept=".jpeg,.jpg,.doc,.docx,.xls,.xlsx,.pdf,.bmp,.tif,.png,.gif,.pjpeg,.tiff,.x-png" type="file" id="docMgrFile1"  class="optional" tabindex="101"/>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td></td>
+                <td class="fieldLabelCustom" style="font-color:rgb(4, 172, 12);font-size:12px;"><a id="addrow" href="javascript:;" title=""  tabindex="101" onkeydown="if(event.keyCode==13||event.keyCode==32){$(this).click(); event.preventDefault();}">+Add Row</a></td>
+
+            <script>
+                $(document).ready(function(){
+                    /*$('#addrow').bind('keydown keypress', function(event) {
+              if($('#txtDocType').text() !== 'Packing List'){
+                            if(event.keyCode== 13 || event.keyCode== 32) {
+                                addRows();
+                                bind();
+                                event.preventDefault();
+                            }
+
+                        }
+                    });
+                    */
+            $('#addrow').click(function(event) {
+              if($('#txtDocType').text() !== 'Packing List'){
+                                addRows();
+                                bind();
+                                event.preventDefault();
+                        }
+
+                    });
+                });
+            </script>
+        </tr>
+        <tr height="10px;"></tr>
+    </tfoot>
+</table>
+
+<br>
+<hr>
+
+
+<table cellpadding="0" cellspacing="0" style="margin-left:60px;font-size:12px;">
+<colgroup>
+
+<col width="150px" />
+<col/>
+</colgroup>
+<tbody>
+
+<tr>
+<td>
+<input type="submit" CLASS="btnClass2_sasgc_claims" style="margin-left:700px;" id="upload" name="upload" value="Upload" title="" tabindex="101"  onclick="return checkonUpload();" onkeydown="if( event.keyCode==32){$(this).click();event.preventDefault();}" />
+</td>
+
+<td>
+<input type="button" CLASS="btnClass2_sasgc_claims"  id="reset" name="reset" value="Reset" title=""  tabindex="101" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#reset').click();event.preventDefault();}"/>
+</td>
+<td>
+<input type="button" CLASS="btnClass2_sasgc_claims" onClick="cancelFile();" id="cancel" name="cancel" value="Cancel" title=""  tabindex="101" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$('#cancel').click();$('#txtAirWaybill').focus();event.preventDefault();}"/>
+</td>
+
+
+
+</tr>
+
+<tr>
+
+</tr>
+</tbody>
+</table>
+</form>
+<div align="center" id="imageLoading1">
+<br />
+<!-- <img class="loading" src="/sasweb/images/booking/ajax-loader.gif" alt="" /> -->
+<!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+</div>
+
+</div>
+
+
+<div id="fade" class="black_overlay"></div>
+
+
+
+<div id="light12" scrolling="no" style="overflow:hidden;width:68% !important;" class="white_contentEnclosure">
+<table>
+<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+
+<td><a size="5" id="closevwenc" style="padding-top:-50px;cursor:none" title="Close" class="close" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light12').style.display='none';document.getElementById('fade1').style.display='none';ShowProgress(0);}else return false;"></a></td>
+
+</tr>
+</table>
+
+    <div id="iframeBackOverlayEnc" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingEnc">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+
+
+<iframe src="" scrolling="no" style="overflow:hidden;" frameBorder="0" id="enclosureiframe" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingEnc').style.display ='none';document.getElementById('iframeBackOverlayEnc').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade1" class="black_overlay"></div>
+
+<!--Proforma Invoice starts here -->
+<div id="light22" scrolling="no" style="overflow:hidden;width:1196px" class="white_contentCI">
+    <table>
+    <tr>
+        <td style="font-weight: bold;padding-left:1050px;" nowrap id=""></td>
+        <td>
+            <a size="5" style="padding-top:-50px;" title="Close" id="closeProInvoiceButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=true&txtPrefix=117 &txtAirWaybill=''&docType=Proforma Invoice&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light22').style.display='none';document.getElementById('fade10').style.display='none';ShowProgress(0);}else return false;"></a>
+        </td>
+    </tr>
+    </table>
+    <div id="iframeBackOverlayPI" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingPI">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    </div>
+    <iframe src=""  frameBorder="0" id="piform" width="100%" height="100%" class="formOpen" onload="document.getElementById('iframeimageLoadingPI').style.display ='none';document.getElementById('iframeBackOverlayPI').style.display ='none';" >
+    </iframe>
+</div>
+<div id="fade10" class="black_overlay"></div>
+<!--Proforma Invoice Ends here -->
+
+<div id="light13" scrolling="no" style="overflow:hidden;width:1180px" class="white_contentCI">
+    <table>
+    <tr>
+        <td style="font-weight: bold;padding-left:1050px;" nowrap id=""></td>
+        <td>
+            <a size="5" style="padding-top:-50px;" title="Close" id="closeComInvoiceButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=true&txtPrefix=117 &txtAirWaybill=''&docType=Commercial Invoice&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light13').style.display='none';document.getElementById('fade2').style.display='none';ShowProgress(0);}else return false;">
+            </a>
+        </td>
+    </tr>
+    </table>
+    <div id="iframeBackOverlayCI" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingCI">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    </div>
+    <iframe src=""  frameBorder="0" id="ciform" width="100%" height="100%" class="formOpen" onload="document.getElementById('iframeimageLoadingCI').style.display ='none';document.getElementById('iframeBackOverlayCI').style.display ='none';" >
+    </iframe>
+</div>
+<div id="fade2" class="black_overlay"></div>
+
+<div id="light14" scrolling="no" style="overflow:hidden;width:1178px" class="white_contentPL">
+    <table>
+    <tr>
+    <td style="font-weight: bold;padding-left:1050px;" nowrap id=""></td>
+    <td><a size="5" style="padding-top:-50px;" id="closePackingListButton" title="Close" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Packing List&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light14').style.display='none';document.getElementById('fade3').style.display='none';ShowProgress(0);}else return false;"></a></td>
+    </tr>
+    </table>
+        <div id="iframeBackOverlayPL" class="black_overlay" style="display:none"></div>
+        <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingPL">
+            <br />
+            <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+        <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
         </div>
-    </body>
+    <iframe src="" frameBorder="0" id="plform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingPL').style.display ='none';document.getElementById('iframeBackOverlayPL').style.display ='none';">
+    </iframe>
+</div>
+<div id="fade3" class="black_overlay"></div>
+<div id="light15" scrolling="no" style="overflow:hidden;height:1200px; width:1150px;" class="white_contentHM">
+<div class="white_contentforclosehm">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light15').style.display='none';document.getElementById('fade4').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:1230px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeManifestButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=House Manifest&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light15').style.display='none';document.getElementById('fade4').style.display='none';ShowProgress(0);}else return false;"></a></td>
+</tr>
+</table>
+<div id="iframeBackOverlayHman" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingHman">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+<iframe src="" frameBorder="0" id="hmform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingHman').style.display ='none';document.getElementById('iframeBackOverlayHman').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade4" class="black_overlay"></div>
+<div id="light24" scrolling="no" style="overflow:hidden;" class="white_contentShipper">
+<div class="white_contentforcloseShipper">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light24').style.display='none';document.getElementById('fade5').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:1140px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeShippersDecButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Shippers Dangerous Goods Declaration&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light24').style.display='none';document.getElementById('fade5').style.display='none';ShowProgress(0);}else return false;"></a></td>
+</tr>
+</table>
+
+<div id="iframeBackOverlaySDan" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingSDan">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+<iframe src="" frameBorder="0" id="sdform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingSDan').style.display ='none';document.getElementById('iframeBackOverlaySDan').style.display ='none';">
+
+</iframe>
+</div>
+<div id="light25" scrolling="no" style="overflow:hidden;" class="white_contentLA">
+<div class="white_contentforcloseLA">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light25').style.display='none';document.getElementById('fade5').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:1100px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeLiveAnimalsButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Shippers Declaration for Live Animals&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light25').style.display='none';document.getElementById('fade5').style.display='none';ShowProgress(0);}else return false;"></a></td>
+</tr>
+</table>
+<div id="iframeBackOverlayLA" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingLA">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+
+<iframe src="" frameBorder="0" id="laform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingLA').style.display ='none';document.getElementById('iframeBackOverlayLA').style.display ='none';">
+
+</iframe>
+</div>
+
+<div id="light20" scrolling="no" style="overflow:hidden;" class="white_contentDN">
+<div class="white_contentforcloseDN">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light15').style.display='none';document.getElementById('fade4').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:1100px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeDeliveryNoteButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Proof Of Delivery&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light20').style.display='none';document.getElementById('fade5').style.display='none';ShowProgress(0);}else return false;"></a></td>
+</tr>
+</table>
+    <div id="iframeBackOverlayPOD" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingPOD">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+
+
+<iframe src="" frameBorder="0" id="dnform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingPOD').style.display ='none';document.getElementById('iframeBackOverlayPOD').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade5" class="black_overlay"></div>
+
+<div id="light19" scrolling="no" style="overflow:hidden;" class="white_contentCitesCer">
+<div class="white_contentforcloseCitesCer">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light15').style.display='none';document.getElementById('fade4').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<td><a size="5" style="padding-left:1030px;padding-top:-50px;" title="Close" id="closeCitesCertificateButton formClose" class="close" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=CITES Certificate&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light19').style.display='none';document.getElementById('fade9').style.display='none';ShowProgress(0);}else return false;" onkeydown="if(event.keyCode==13||event.keyCode==32){$(this).click()}">X</a></td>
+</tr>
+</table>
+
+<iframe src="" frameBorder="0" id="citesCerform" width="100%" height="100%">
+
+</iframe>
+</div>
+<div id="fade9" class="black_overlay"></div>
+
+<div id="light16" scrolling="no" style="overflow:hidden;height: 92%;width:1188px !important;" class="white_contentHAWB">
+<div class="white_contentforcloseawb">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light16').style.display='none';document.getElementById('fade5').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:930px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeHawbformButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=House Waybill&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light16').style.display='none';document.getElementById('fade5').style.display='none';ShowProgress(0);}else return false;"></a></td>
+</tr>
+</table>
+<div id="iframeBackOverlayHawb" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingHawb">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+<iframe src="" frameBorder="0" id="hawbform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingHawb').style.display ='none';document.getElementById('iframeBackOverlayHawb').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade5" class="black_overlay"></div>
+<div id="light18"  style="overflow:hidden;height:1950px;width:1194px !important;" class="white_contentAWB" >
+<div class="white_contentforcloseawb">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light18').style.display='none';document.getElementById('fade8').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:930px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeAwbformButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Air Waybill&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light18').style.display='none';document.getElementById('fade5').style.display='none';ShowProgress(0);}else return false;"></a></td>
+</tr>
+</table>
+    <div id="iframeBackOverlayAWB" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingAWB">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+<iframe src="" frameBorder="0" id="awbform" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingAWB').style.display ='none';document.getElementById('iframeBackOverlayAWB').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade8" class="black_overlay"></div>
+
+<div id="light23" scrolling="no" style="overflow:hidden;" class="white_contentSecurityDec">
+<div class="white_contentforcloseSecurityDec">
+<table style="">
+<!--<tr>
+<td style="font-weight: bold;" nowrap id=""></td>
+<TD style="padding-top:-200px;"><input id="" name="" type="submit" class="btnClass2_sasgc" onClick="document.getElementById('light23').style.display='none';document.getElementById('fade23').style.display='none';" value="Close" title="Close" /></TD>
+</tr>-->
+</table>
+</div>
+<table>
+<tr>
+<td style="font-weight: bold;padding-left:1030px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="closeSecurityDecButton" class="close formClose" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Security Declaration&nonsecureawbpage=false" onclick="if(checkForChanges()){closeIframe();document.getElementById('light23').style.display='none';document.getElementById('fade23').style.display='none';ShowProgress(0);}else return false"></a></td>
+</tr>
+</table>
+    <div id="iframeBackOverlaySDec" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingSDec">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+
+<iframe src="" frameBorder="0" id="secDecform" width="100%" height="100%" onload="document.getElementById('iframeBackOverlaySDec').style.display ='none';document.getElementById('iframeimageLoadingSDec').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade23" class="black_overlay"></div>
+
+
+<div id="light17" scrolling="no" style="overflow:hidden;width:1050px;" class="white_contentEnclosure">
+<table>
+<tr>
+<td style="font-weight: bold;width:1000px;" nowrap id=""></td>
+<td><a size="5" style="padding-top:-50px;" title="Close" id="hstryCls" class="close" href="#maindiv" onclick="document.getElementById('light17').style.display='none';document.getElementById('fade7').style.display='none';setTimeout(function(){$('#txtAirWaybill').focus();},100);" onkeydown="if(event.keyCode==13 || event.keyCode==32){$(this).click();event.preventDefault();}else if(event.keyCode==9 || (event.keyCode== 9 && event.shiftKey)){event.preventDefault();}">X</a></td>
+</tr>
+</table>
+
+<div id="iframeBackOverlayHis" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingHis">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+
+<iframe src="" scrolling="no" style="overflow:hidden;" frameBorder="0" id="docHistoryiframe" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingHis').style.display ='none';document.getElementById('iframeBackOverlayHis').style.display ='none';">
+
+</iframe>
+</div>
+<div id="fade7" class="black_overlay"></div>
+
+
+<div align="center" style="height:850px;" id="imageLoading">
+<br />
+<!-- <img class="loading" src="/sasweb/images/booking/ajax-loader.gif" alt="" /> -->
+<!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+</div>
+
+
+</tr>
+
+<div id="fade11" class="black_overlay"></div>
+
+
+<div id="light21" scrolling="no" style="overflow:hidden;" class="white_contentPen">
+<table >
+<tr>
+<td style="padding-left:1050px;font-weight: bold;" nowrap ></td>
+                    <td  ><a id="pendingTD"  size="5" style="padding-top:-50px;" title="Close"  class="close" href="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &nonsecureawbpage=false"  onclick="if(checkForChanges()){document.getElementById('light21').style.display='none';document.getElementById('fade11').style.display='none';ShowProgress(0);closeIframe();}else return false;"></a></td>
+
+                    </tr>
+</table>
+<div id="iframeBackOverlayPen" class="black_overlay" style="display:none"></div>
+    <div align="center" style="height: 600px;position: fixed;left: 32%;top: 17%;display: none;" id="iframeimageLoadingPen">
+        <br />
+        <img  src="http://prod.sasweb.sascargo.com/sasweb/images/loading_fileupload1.gif"  style="display: block;width: 90%;height: 10%;left: 45%;vertical-align: middle;" width="1330" height="550" class="loadingIf" id="loadingIf"/>
+    <!-- <embed type="application/mplayer" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="mediaplayer1" ShowStatusBar="false" EnableContextMenu="false" autostart="true" width="320" height="240" loop="true" src="video.wmv" /> -->
+    </div>
+
+<iframe src="" scrolling="no" style="overflow:hidden;" frameBorder="0" id="pendingiframe" width="100%" height="100%" onload="document.getElementById('iframeimageLoadingPen').style.display ='none';document.getElementById('iframeBackOverlayPen').style.display ='none';">
+
+</iframe>
+
+</div>
+
+</table>
+
+
+
+
+<div id="consolidationpopup" class="white_contentDisplayopoup" onmouseover="" style=" top: 550px;">
+</div>
+<div id="fade55" class="black_overlayhideEmail" style=""></div>
+<form   method="post" action="awbworkflow_newUI.jsp?btnSearchAWB=null&txtPrefix=117 &txtAirWaybill= '' &docType=Air Waybill&nonsecureawbpage=false">
+<iframe id="myDocFrame" name="myDocFrame" src=""  style="width:1100px; height:520px;margin-left:20px;border:none;background-color:white;" frameborder="0" tabindex="-1"></iframe>
+
+<div id="lightEmail" class="white_contenthideEmailZip" style="width:1095px;max-width:1188px;height:682px; !important">
+ <div class="black_overlay" id="fadeEmailPopup" style="display: none;"></div>
+<table cellpadding="3">
+<tr>
+<td colspan="2" style="text-align:right;opacity:0.5;width:970px;"><a href = "javascript:void(0)" tabindex="115" CLASS="NoPreventDefault" id="emailAwbCls" onclick = "document.getElementById('lightEmail').style.display='none';document.getElementById('fade55').style.display='none';setTimeout(function(){$('#txtAirWaybill').focus();},100);
+if(document.getElementById('fade')!=null){document.getElementById('fade').style.display='none'};event.preventDefault();" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$(this).click(); setTimeout(function(){$('#txtAirWaybill').focus();},100);event.preventDefault();}" tabindex="111">X</a></td>
+</tr>
+<tr>
+<td style="vertical-align:top">
+<table >
+
+<tr>
+<td style="border:none;" class="fieldLabelCustom"><input type="submit"  tabindex="115" id="awbEmailSend" name="Sendbutton" style="height: 70px;margin-top:77px !important;" value="Send" onkeydown="if(event.keyCode == 13 || event.keyCode== 32){$(this).click();event.preventDefault();}" onclick="if(emailValidationCheck()) return true; else return false;" tabindex="110"/></td>
+<input type="hidden" name="emailvalidatn" id="emailvalidatn" value="true" />
+
+</tr>
+
+
+</table>
+</td>
+<td>
+<table cellpadding="3">
+<tr>
+<td><table>
+<td><table style="width:45px;"><tr><td class="fieldLabelCustom">To</td></tr></table></td><td><input type="text" name="emailTo" id="emailTo" class="notHover" style="width:683px;margin-left:5px;" onblur="document.getElementById('focused_element').value = 'emailTo';" onkeyup="suggestiveSearchEmail_EMAILTO('emailTo','3262');" tabindex="101"/></td>
+                    <td valign="center" style="width: 148px;margin-right:18px"><input style="margin-left:24px" type="button" class="btnClass4_sasgc" name="btnAddressBook"
+                                            value="Add to Address Book" id="btnAddressBook" onclick="addEmailToAddressBook(3262);"
+                                            title="Add to Address Book" tabindex="102">
+                                        </td>
+
+<td style="padding-bottom:5px;padding-left:30px; !important;">
+                                            <img src="/sasweb/images/address.png" title="Address Book" alt="Address Book" name="addrBook" id="addrBook" style="cursor:pointer;"
+                                            onkeydown="if(event.keyCode == 13 || event.keyCode == 32){$(this).click();event.preventDefault();}"
+                                            onclick="$('input[name=addrSelectionRadioEmail]').attr('checked',false);addressBookEmailRetrieve('3262');" tabindex="103">
+                                            <br><font style="color: cadetblue; font-size: 12px;margin-left:-24px">Address Book</font>
+</td>
+</tr>
+                                       <tr>
+                                            <td><table style="width:45px;"><tr><td class="fieldLabelCustom">Cc   </td></tr></table></td><td><input type="text" name="cc" id="cc" class="notHover" style="width:683px;margin-left:5px;margin-bottom:5px;" onblur="document.getElementById('focused_element').value = 'cc';" onkeyup="suggestiveSearchEmail_CC('cc','3262');" tabindex="104"/></td>
+                                       </tr>
+                                       <tr>
+                                            <td><table style="width:45px;"><tr><td class="fieldLabelCustom">Bcc   </td></tr></table></td><td><input type="text" name="bcc" id="bcc" class="notHover" style="width:683px;margin-left:5px;margin-bottom:5px;" onblur="document.getElementById('focused_element').value = 'bcc';" onkeyup="suggestiveSearchEmail_BCC('bcc','3262');" tabindex="105"/></td>
+                                       </tr>
+
+                                       <tr>
+                                            <td><span style="font-size:75% !important;margin-left:0px !important;opacity:1;" class="fieldLabelCustom">Subject</span></td><td><input type="text" name="emailSubject" class="notHover" style="width:683px;margin-left:5px;margin-bottom:5px;" onblur="document.getElementById('focused_element').value = 'emailTo';" tabindex="106"></td>
+                                       </tr>
+                                       <tr>
+
+                                            <td ><span style="font-size:75% !important;margin-left:0px !important;opacity:1;" class="fieldLabelCustom">Attached</span></td>
+
+
+
+                <td onClick="window.open('')">
+                    <input class="" type="text" name="emailAttachmnt" id="awbEmailAttach" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){window.open('');event.preventDefault();}" value="" style="width:684px;margin-left:5px!important"  tabindex="107" readonly />
+                </td>
+            </tr>
+            <tr>
+                    <td class="fieldLabelCustom" style="text-align: left;font-size:75%; !important;">Link </td>
+                    <td>
+                        <font style="font-family:Arial;font-size:14px;">
+                            <p><a href="" target="_blank" title="Click here to download" id="awbEmailLink"  onkeydown="if(event.keyCode == 13 || event.keyCode == 32){window.open('');event.preventDefault();}"   tabindex="108" >Click here to download</a></p>
+                        </font>
+                    </td>
+                </tr>
+        </table>
+    </td>
+</tr>
+    <tr>
+        <td colspan="2">
+            <table>
+
+                                           <tr>
+                                                <td colspan="3" ><textarea style="width:740px;height:395px;background-color:white !important;padding:0px !important;" class="notHover NoPreventDefault AcceptTab" id="emailBody" name="emailBody" onblur="document.getElementById('focused_element').value = 'emailTo';"tabindex="109"></textarea></td>
+                                           </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</div>
+
+
+
+<div id="fade" class="black_overlayhideEmail" style="display:none">
+</div>
+
+<!-- ADDRESS BOOK EMAIL POP UP START-->
+<div name="addressBookEmail" id="addressBookEmail" class="AddressBookClass" style="display:none">
+
+ <table>
+ <tr><td><font style="font-size: 14px; font-weight: bold; margin-left: 407px;">Address Book Details</font></td>
+ <td style="width: 440px;"></td>
+ <td>
+ <a href="javascript:void(0)" id="clsAddrBookEmail" style="font-size: 15px;text-decoration: none; cursor: pointer;" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){resetSearchCloseSelectEmail();
+    }" onclick="resetSearchCloseSelectEmail();
+    ">X</a>
+ <td/>
+ </tr>
+ <tr></tr>
+ </table>
+
+
+<div style='height:236px;overflow-y:auto;overflow-x:auto;'>
+
+                <table  id="mytableEmail" class="alter_cell_table_sas" style="border-collapse:fixed;table-layout:fixed;margin-top: 24px;" >
+                    <col width="10px">
+                    <col width="25px">
+                    <col width="20px">
+                    <col width="22px">
+                    <col width="20px">
+                    <col width="20px">
+                    <col width="20px">
+                    <col width="15px">
+                    <col width="15px">
+                    <col width="15px">
+                    <col width="20px">
+                    <thead>
+                        <tr class="row_head">
+                            <td width="10px" class="tdStyle"><label color="white" ><b style="font-size: 12px;">Select</b></label></td>
+
+                            <td id="nameEmail" width="25px" title="Name" class="tdStyle"><label color="white"><b style="font-size: 12px;">Name</b><img id="imgNameEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+
+                            <td id="acnoEmail" width="20px" title="Account Number" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Account Number</b><img id="imgAcNoEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="addrEmail" width="22px" title="Address" class="tdStyle" ><label
+                                                color="white"><b style="font-size: 12px;">Address</b><img id="imgAddrEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="contEmail" width="20px" title="Country" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Country</b><img id="imgContEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="statEmail" width="20px" title="State" class="tdStyle" ><label
+                                                color="white"><b style="font-size: 12px;">State</b><img id="imgStEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="citEmail" width="20px" title="City" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">City</b><img id="imgCityEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="pcodeEmail" width="15px" title="Postal Code"  class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Postal Code</b><img id="imgPcodeEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="phnEmail" width="15px" title="Phone"  class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Phone</b><img id="imgPhnEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="faxnEmail" width="15px" title="Fax" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Fax</b><img id="imgFaxEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                            <td id="emailidEmail" width="20px" title="Email" class="tdStyle"><label
+                                                color="white"><b style="font-size: 12px;">Email</b><img id="imgMailEmail" class="hideImage" border="0" style="height:10px;width:13px;" src="/sasweb/images/arrow-asc.gif"/></label></td>
+                        </tr>
+                        <tr class="tbsAddrEmailSearch">
+                            <td class="tdStyle"></td>
+                            <td class="tdStyle"><input type="text"  id="searchEmail" name="searchEmail"  value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search1Email" name="search1Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search2Email" name="search2Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search3Email" name="search3Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search4Email" name="search4Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search5Email" name="search5Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search6Email" name="search6Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search7Email" name="search7Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+
+                            <td class="tdStyle"><input type="text"  id="search8Email" name="search8Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;" /></td>
+
+                            <td class="tdStyle"><input type="text"  id="search9Email" name="search9Email" value="" placeholder="Type to search" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.preventDefault();}" style="padding: 0px !important;border:none;width:95px !important;font-size: 10px;height:16px !important;"/></td>
+                        </tr>
+                        </thead>
+                        <tbody id="fbodyEmail" class="tbodyAddrEmail">
+
+
+                        </tbody>
+
+                </table>
+
+            </div>
+<table>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td style="text-indent:-7px !important;"><input type="button" name="btnSelectEmail" id="btnSelectEmail" title="Select" value="Select" class="btnClass2_sasgc"
+                    onclick="checkEmailAddrRowSelectionSelectAll();" /></td>
+                    <td><input type="button" name="btnEditEmail" id="btnEditEmail" title="Edit" value="Edit" class="btnClass2_sasgc"
+                    onclick="editEmailAddressJS()" /></td>
+                    <td><input type="button" name="btnDeleteEmail" id="btnDeleteEmail" title="Delete" value="Delete" class="btnClass2_sasgc" onclick="checkEmailAddrRowSelectDel(3262);" /></td>
+                    <td><input type="button" name="btnAddrCloseEmail" id="btnAddrCloseEmail" title="Close" value="Close" class="btnClass2_sasgc" onclick="resetSearchCloseSelectEmail();" /></td>
+                </tr>
+                </table>
+</div>
+<!-- ADDRESS BOOK EMAIL POP UP END-->
+
+<!--ADDRESS BOOK EMAIL EDIT DETAILS-->
+<div id="addressBookEditEmail" name="addressBookEditEmail" class="AddressBookEditEmailClass">
+    <div  style="position: absolute;">
+    <table>
+    <tr><td><font style="font-size: 14px; font-weight: bold;">Address Book Details</font></td>
+    <td style="width:441px;"></td>
+    <td>
+    <a href="javascript:void(0)" id="clsAddrBookEdit" style="font-size: 15px; text-decoration: none; cursor: pointer;" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){document.getElementById('addressBookEditEmail').style.display = 'none';document.getElementById('fadeEmailPopup').style.display = 'none';$('input[name=addrSelectionRadioEmail]').attr('checked',false);event.preventDefault();}" onclick="document.getElementById('addressBookEditEmail').style.display = 'none';document.getElementById('fadeEmailPopup').style.display = 'none';$('input[name=addrSelectionRadioEmail]').attr('checked',false);event.preventDefault();">X</a>
+    <td/>
+    </tr>
+
+    </table>
+    </div>
+    <table>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    </table>
+    <div id="addressEditEmailBody">
+        <table border="0" cellpadding="2" cellspacing="0">
+            <thead></thead>
+                <tbody>
+
+                <tr>
+                    <td valign="bottom"><font class="fieldLabelCustom">Account No.</font></td>
+                    <td valign="bottom" ><font class="fieldLabelCustom">Name</font></td>
+                </tr>
+                <tr>
+                    <td valign="top"><input class=" eidtableText frmElement IsNumber"  name="txtEditEmailAcc"
+                            id="txtEditEmailAcc" value=""
+                            title="" style="width: 120px;" maxlength="15"
+                            type="text"></td>
+                    <td colspan="2"><input class="eidtableText  frmElement" onchange="clearTimeOut();" name="txtEditEmailName"
+                            value="" id="txtEditEmailName" maxlength="30"
+                            title="" style="width: 200px" type="text"></td>
+
+                    <td style="padding-bottom:10px !important;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><font class="fieldLabelCustom">Address</font></td>
+
+                    <td><font class="fieldLabelCustom">Country</font></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input  class="eidtableText  frmElement hidmndtryCheck" name="txtEditEmailAddr" id="txtEditEmailAddr"
+                        value="" title="" onchange="clearTimeOut();"  maxlength="35"
+                        style="width: 250px" maxlength="35" type="text"/></td>
+                    <td valign="top"><input name="txtEditEmailCountry"
+                        type="text" class="eidtableText  frmElement IsAlphaSpace hidmndtryCheck" title="Search is based on first 3 letters."  id="txtEditEmailCountry" maxlength="25"
+                        value="" style="width: 120px" /></td>
+                    <script type="text/javascript">
+                    $(document).ready(function(){
+                    myArrayCountry= "ALBANIA(AL) :ALGERIA(DZ) :AMERICAN SAMOA(AS) :ANTIGUA AND BARBUDA(AG) :ARMENIA(AM) :ARUBA(AW) :AUSTRIA(AT) :AZERBAIJAN(AZ) :BAHAMAS(BS) :BAHRAIN(BH) :BARBADOS(BB) :BELARUS(BY) :BELGIUM(BE) :BELIZE(BZ) :BENIN(BJ) :BERMUDA(BM) :BHUTAN(BT) :BOLIVIA(BO) :BOSNIA HERZEGOVINA(BA) :BOTSWANA(BW) :BRUNEI DARUSSALAM(BN) :BULGARIA(BG) :BURKINA FASO(BF) :BURUNDI(BI) :CAMBODIA(KH) :CAMEROON(CM) :CANADA(CA) :CAPE VERDE(CV) :CAYMAN ISLANDS(KY) :CENTRAL AFRICAN REPUBLIC(CF) :CHAD(TD) :CHILE(CL) :CHINA(CN) :CHRISTMAS ISLAND(CX) :COCOS KEELING ISLANDS(CC) :COMOROS(KM) :CONGO(CG) :COOK ISLANDS(CK) :COSTA RICA(CR) :CÔTE D'IVOIRE(CI) :CROATIA(HR) :CYPRUS(CY) :CZECH REPUBLIC(CZ) :CZECHOSLOVAKIA(CS) :DENMARK(DK) :DJIBOUTI(DJ) :DOMINICA(DM) :DOMINICAN REPUBLIC(DO) :ECUADOR(EC) :EGYPT(EG) :EL SALVADOR(SV) :EQUATORIAL GUINEA(GQ) :ERITREA(ER) :ESTONIA(EE) :FALKLAND ISLANDS MALVINAS(FK) :FAROE ISLANDS(FO) :FIJI(FJ) :FINLAND(FI) :FRANCE(FR) :FRENCH GUIANA(GF) :FRENCH POLYNESIA(PF) :GABON(GA) :GAMBIA(GM) :GEORGIA(GE) :GERMANY(DE) :GIBRALTAR(GI) :GREECE(GR) :GREENLAND(GL) :GRENADA(GD) :GUADELOUPE(GP) :GUAM(GU) :GUATEMALA(GT) :GUINEA BISSAU(GW) :GUINEA(GN) :GUYANA(GY) :HAITI(HT) :HONDURAS(HN) :HONG KONG(HK) :HUNGARY(HU) :ICELAND(IS) :ICELAND(NO) :INDIA(IN) :IRAN(IR) :IRAQ(IQ) :IRELAND(IE) :ISRAEL(IL) :ITALY(IT) :JAMAICA(JM) :JAPAN(JP) :JORDAN(JO) :KAZAKHSTAN(KZ) :KENYA(KE) :KIRIBATI(KI) :KOREA NORTH(KP) :KOREA SOUTH(KR) :KOREA(KR) :KUWAIT(KW) :KYRGYZSTAN(KG) :LATVIA(LV) :LEBANON(LB) :LESOTHO(LS) :LIBERIA(LR) :LITHUANIA(LT) :LUXEMBOURG(LU) :MACAO(MO) :MACEDONIA(MK) :MADAGASCAR(MG) :MALAWI(MW) :MALAYSIA(MY) :MALDIVES(MV) :MALI(ML) :MALTA(MT) :MARSHALL ISLANDS(MH) :MARTINIQUE(MQ) :MAURITANIA(MR) :MAURITIUS(MU) :MAYOTTE(YT) :MICRONESIA(FM) :MOLDOVA(MD) :MONACO(MC) :MONGOLIA(MN) :MONTSERRAT(MS) :MOROCCO(MA) :MOZAMBIQUE(MZ) :NAMIBIA(NA) :NAURU(NR) :NETHERLANDS ANTILLES(AN) :NETHERLANDS(NL) :NEW CALEDONIA(NC) :NICARAGUA(NI) :NIGER(NE) :NIGERIA(NG) :NIUE(NU) :NORWAY(NO) :OMAN(OM) :PANAMA(PA) :PAPUA NEW GUINEA(PG) :PARAGUAY(PY) :POLAND(PL) :PORTUGAL(PT) :PUERTO RICO(PR) :QATAR(QA) :ROMANIA(RO) :RUSSIA(RU) :RWANDA(RW) :SAINT HELENA(SH) :SAINT KITTS AND NEVIS(KN) :SAINT LUCIA(LC) :SAINT PIERRE AND MIQUELON(PM) :SAINT VINCENT AND THE GRENADINES(VC) :SAMOA(WS) :SÃO TOME AND PRINCIPE(ST) :SAUDI ARABIA(SA) :SENEGAL(SN) :SEYCHELLES(SC) :SIERRA LEONE(SL) :SINGAPORE(SG) :SLOVAKIA(SK) :SLOVENIA(SI) :SOMALIA(SO) :SOUTH AFRICA(ZA) :SPAIN(ES) :SRI LANKA(LK) :SUDAN(SD) :SURINAME(SR) :SWAZILAND(SZ) :SWEDEN(SE) :SWITZERLAND(CH) :SYRIAN ARAB REPUBLIC(SY) :TAIWAN(TW) :TAJIKISTAN(TJ) :TANZANIA(TZ) :THAILAND(TH) :TOGO(TG) :TONGA(TO) :TRINIDAD AND TOBAGO(TT) :TUNISIA(TN) :TURKEY(TR) :TURKMENISTAN(TM) :TURKS AND CAICOS ISLANDS(TC) :TUVALU(TV) :UGANDA(UG) :UKRAINE(UA) :UNITED ARAB EMIRATES(AE) :UNITED KINGDOM(GB) :UNITED STATES MINOR OUTLYING ISLANDS(UM) :UNITED STATES(UA) :UNITED STATES(US) :URUGUAY(UY) :UZBEKISTAN(UZ) :VANUATU(VU) :VENEZUELA(VE) :VIRGIN ISLANDS BRITISH(VG) :VIRGIN ISLANDS US(VI) :YEMEN(YE) :ZAMBIA(ZM) :ZIMBABWE(ZW)  ";
+
+                                autocomp_retriveStateAddressBookSelectAll("txtEditEmailCountry","txtEditEmailState","txtEditEmailCity");
+
+                                    $("#txtEditEmailCountry").blur(function(){
+
+                                    setTimeout(function() { autocomp_retriveStateAddressBookSelectAll("txtEditEmailCountry","txtEditEmailState","txtEditEmailCity") } ,100);
+                                      });
+
+                             autocomp_countrySelectAll(myArrayCountry.split(":"),'txtEditEmailCountry',3);
+                            });
+
+                     </script>
+
+                </tr>
+                <tr>
+                    <td><font class="fieldLabelCustom">State</font></td>
+                    <td><font class="fieldLabelCustom">City</font></td>
+                    <td><font class="fieldLabelCustom">Postal Code</font></td>
+                </tr>
+
+                <tr>
+                    <TD valign="top"><input type="text"
+                        class="eidtableText frmElement IsAlphaSpace" title="Search is based on first 2 letters."
+                        id="txtEditEmailState" value=""
+                        style="width: 120px" maxlength="25" name="txtEditEmailState" /></TD>
+
+                    <TD valign="top"><input type="text" maxlength="25"
+                        class="eidtableText  frmElement IsAlphaSpace hidmndtryCheck"  title="Search is based on first 3 letters."
+                        id="txtEditEmailCity" name="txtEditEmailCity"
+                        value="" style="width: 120px" /></TD>
+                    <script type="text/javascript">
+                    $("#txtEditEmailCity").focus(function(){
+                    autocomp_citySelectAll("txtEditEmailCountry","txtEditEmailState","txtEditEmailCity");
+                    });
+
+                    $("#txtEditEmailCountry").blur(function(){
+
+                    autocomp_citySelectAll("txtEditEmailCountry","txtEditEmailState","txtEditEmailCity");
+                                  });
+
+                    </script>
+
+                    <td><input  class="eidtableText  frmElement IsAlphaNum hidmndtryCheck"
+                        name="txtEditEmailPcode" id="txtEditEmailPcode" maxlength="10"
+                        value="" onchange="clearTimeOut();" title=""
+                        style="width: 120px" type="text"></td>
+                </tr>
+                <tr>
+                    <td><font class="fieldLabelCustom">Phone</font></td>
+                    <td><font class="fieldLabelCustom">Fax</font></td>
+                    <td><font class="fieldLabelCustom">E-mail</font></td>
+                </tr>
+                <tr>
+                    <td><input class="eidtableText frmElement IsNumPlusMinus "
+                            name="txtEditEmailPhone" id="txtEditEmailPhone"
+                            value="" onchange="clearTimeOut();" title="" maxlength="15"
+                            style="width: 120px" type="text"></td>
+                    <td><input class="eidtableText frmElement IsNumPlusMinus"
+                            name="txtEditEmailFax" id="txtEditEmailFax"
+                            value=""  title="" maxlength="15"
+                            style="width: 120px" type="text"></td>
+                    <td><input class="eidtableText  frmElement NotSpace"
+                            name="txtEditEmailEmail" id="txtEditEmailEmail"
+                            value="" onchange="clearTimeOut();" title="" maxlength="50"
+                            style="width: 370px" type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td style="text-indent:-5px !important;"><input type="button" name="btnSaveAddr" id="btnSaveAddr" title="Save" value="Save" class="btnClass2_sasgc"
+            onclick="editEmailAddr(3262)" /></td>
+            <td><input type="button" name="btnCloseAddr" id="btnCloseAddr" title="Close" value="Close" class="btnClass2_sasgc"
+            onclick="$('input[name=addrSelectionRadioEmail]').attr('checked',false);document.getElementById('addressBookEditEmail').style.display = 'none';document.getElementById('fadeEmailPopup').style.display = 'none';event.preventDefault();" /></td>
+        </tr>
+    </table>
+</div>
+<!--ADDRESS BOOK EMAIL EDIT DETAILS-->
+
+</form>
+</body>
+
 </html>
