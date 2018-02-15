@@ -13,15 +13,16 @@
       l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
       (window,document,'script','Surfly');
 
-      Surfly.init({widget_key:'0c17c102b943457a82838fe64a5a0a0d'}, function(init) {});
-
-      var but = document.getElementById('start-button');
-      if (!Surfly.agentAvailable) {
-        but.style.display = 'none';
-      }
-      else {
-        but.style.display = 'block';
-      }
+      Surfly.init({widget_key:'0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
+        Surfly.on('agent_status', function(api, event) {
+            var but = document.getElementById('my-custom-button');
+            if (event.available) {
+                but.style.display = 'block';
+            } else {
+                but.style.display = 'none';
+            }
+        });
+      });
 </script>
 </body>
 </html>
