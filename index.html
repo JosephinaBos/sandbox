@@ -15,7 +15,7 @@
 
       Surfly.init({widget_key:'0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
         Surfly.on('agent_status', function(api, event) {
-            var but = document.getElementById('my-custom-button');
+            var but = document.getElementById('start-button');
             if (event.available) {
                 but.style.display = 'block';
             } else {
