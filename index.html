@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Check agentAvailable</title>
-</head>
-<body>
-<a class="wsite-button wsite-button-large wsite-button-normal" id="start-button" href="#surflystart">Start a session</a>
-<script>
-      (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-      l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-      l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-      (window,document,'script','Surfly');
 
-      Surfly.init({widget_key:'0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
-        Surfly.on('agent_status', function(api, event) {
-            var but = document.getElementById('start-button');
-            if (event.available) {
-                but.style.display = 'block';
-            } else {
-                but.style.display = 'none';
-            }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Landing Page Example</title>
+</head>
+
+<body>
+
+    <script>
+        (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+        l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+        l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+        (window,document,'script','Surfly');
+
+        var settings = {
+            widgetkey: '***WIDGETKEY***',
+            hide_until_agent_joins: true,
+            start_docked: true
+        };
+
+        window.addEventListener('DOMContentLoaded', function() {  
+            Surfly.init(settings, function(init) {        
+                if (init.success) {
+                    if (!Surfly.isInsideSession) {
+                        Surfly.session()
+                            .on('session_started', function(session, event) {
+                                // display the PIN of the current session
+                                document.getElementById("sessidtarget").innerText = session.pin;
+                            })
+                            .on('viewer_joined', function(session, event) {
+                                // if a viewer joins and they are the first then redirect to a page of your choice
+                                if (event.count == 1) {
+                                    session.relocate("***URL***");
+                                }
+                            }).startLeader();
+                    }        
+                }  
+            });
         });
-      });
-</script>
+    </script>
+
+    <h1> Landing Page Example </h1>
+    <div>
+        <span>Session Code:</span>
+        <span id="sessidtarget">...</span>
+    </div>
 </body>
+
 </html>
