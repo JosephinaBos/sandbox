@@ -6,16 +6,25 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 
-    <script>
-        (function (s, u, r, f, l, y) {
+    <style type="text/css">
+        #surfly-frame {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="surfly-frame" src=""></iframe>
+
+    <script type="text/javascript">
+                (function (s, u, r, f, l, y) {
             s[f] = s[f] || { init: function () { s[f].q = arguments } };
             l = u.createElement(r); y = u.getElementsByTagName(r)[0]; l.async = 1;
             l.src = 'https://surfly.com/surfly.js'; y.parentNode.insertBefore(l, y);
         })
             (window, document, 'script', 'Surfly');
-    </script>
 
-    <script>
         Surfly.init({
             widget_key: "XXXX",
             docked_only: true,
@@ -26,18 +35,7 @@
                 //Surfly.button();
             }
         });
-    </script>
 
-    <style type="text/css">
-        #surfly-frame {
-            width: 100%;
-            height: 500px;
-        }
-    </style>
-</head>
-
-<body>
-    <script type="text/javascript">
         var api = getAgentAPI();
         var baseUrl = "https://www.surfly.com";
         //message received from Cludo chat
@@ -58,8 +56,6 @@
 
         }
     </script>
-
-    <iframe id="surfly-frame" src=""></iframe>
 </body>
 
 </html>
