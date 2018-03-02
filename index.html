@@ -1,52 +1,65 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Landing Page Example</title>
-</head>
-
-<body>
+    <script type="text/javascript" src="js/CLUDO.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 
     <script>
-        (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-        l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-        l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-        (window,document,'script','Surfly');
+        (function (s, u, r, f, l, y) {
+            s[f] = s[f] || { init: function () { s[f].q = arguments } };
+            l = u.createElement(r); y = u.getElementsByTagName(r)[0]; l.async = 1;
+            l.src = 'https://surfly.com/surfly.js'; y.parentNode.insertBefore(l, y);
+        })
+            (window, document, 'script', 'Surfly');
+    </script>
 
-        var settings = {
-            widgetkey: '0c17c102b943457a82838fe64a5a0a0d',
-            hide_until_agent_joins: true,
-            start_docked: true
-        };
-
-        window.addEventListener('DOMContentLoaded', function() {  
-            Surfly.init(settings, function(init) {        
-                if (init.success) {
-                    if (!Surfly.isInsideSession) {
-                        Surfly.session()
-                            .on('session_started', function(session, event) {
-                                // display the PIN of the current session
-                                document.getElementById("sessidtarget").innerText = session.pin;
-                            })
-                            .on('viewer_joined', function(session, event) {
-                                // if a viewer joins and they are the first then redirect to a page of your choice
-                                if (event.count == 1) {
-                                    session.relocate("***URL***");
-                                }
-                            }).startLeader();
-                    }        
-                }  
-            });
+    <script>
+        Surfly.init({
+            widget_key: "XXXX",
+            docked_only: true,
+            hidden: true
+        }, function (init) {
+            if (init.success) {
+                // display the default Surfly button
+                //Surfly.button();
+            }
         });
     </script>
 
-    <h1> Landing Page Example </h1>
-    <div>
-        <span>Session Code:</span>
-        <span id="sessidtarget">...</span>
-    </div>
+    <style type="text/css">
+        #surfly-frame {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var api = getAgentAPI();
+        var baseUrl = window.location.href;
+        //message received from Cludo chat
+        api.onCallMessageReceived = function (event) {
+            var message = event.Call.IMMessage;
+            if (message.substr(0, 8) == "##SURFLY") {
+                var url = message.substr(10);
+                toastr.info("New Surfly session...");
+                window.setTimeout(() => {
+                    console.info("Redirecting to " + url);
+                    var session = Surfly.session({
+                        disable_end_redirect: false,
+                        follower_redirect_url: baseUrl,
+                        on_end_redirect_follower_to_queue: false
+                    }, url).startFollower("#surfly-frame");
+                }, 3000);
+            }
+
+        }
+    </script>
+
+    <iframe id="surfly-frame" src=""></iframe>
 </body>
 
 </html>
