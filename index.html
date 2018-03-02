@@ -44,7 +44,7 @@
         api.onCallMessageReceived = function (event) {
             var message = event.Call.IMMessage;
             if (message.substr(0, 8) == "##SURFLY") {
-                var url = message.substr(10);
+                var url = "https://www.google.com";
                 toastr.info("New Surfly session...");
                 window.setTimeout(() => {
                     console.info("Redirecting to " + url);
