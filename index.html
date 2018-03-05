@@ -39,17 +39,16 @@
 <body>
     <script type="text/javascript">
         var api = getAgentAPI();
-        var baseUrl = window.location.href;
+        var baseUrl = "www.wikipedia.com"
         //message received from Cludo chat
         api.onCallMessageReceived = function (event) {
             var message = event.Call.IMMessage;
             if (message.substr(0, 8) == "##SURFLY") {
-                var url = message.substr(10);
+                var url = "www.facebook.com";
                 toastr.info("New Surfly session...");
                 window.setTimeout(() => {
                     console.info("Redirecting to " + url);
                     var session = Surfly.session({
-                        disable_end_redirect: false,
                         follower_redirect_url: baseUrl,
                         on_end_redirect_follower_to_queue: false
                     }, url).startFollower("#surfly-frame");
