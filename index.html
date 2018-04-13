@@ -1,34 +1,27 @@
-<html>
+<!DOCTYPE html>
 
 <head>
-    <script type="text/javascript" src="js/CLUDO.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
 </head>
 
 <body>
+<h1>Full screen test</h1>
 
-    <script>
-        (function (s, u, r, f, l, y) {
-            s[f] = s[f] || { init: function () { s[f].q = arguments } };
-            l = u.createElement(r); y = u.getElementsByTagName(r)[0]; l.async = 1;
-            l.src = 'https://surfly.com/surfly.js'; y.parentNode.insertBefore(l, y);
-        })
-            (window, document, 'script', 'Surfly');
+<script>
+      (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+      l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+      l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+      (window,document,'script','Surfly');
 
-        Surfly.init({
-            widget_key: "0c17c102b943457a82838fe64a5a0a0d",
-            docked_only: true,
-        }, function (init) {
-            if (init.success) {
-                display the default Surfly button
-                Surfly.button();
-            }
-        });
+      Surfly.init({widget_key:'0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
+        if (init.success) {
+        // display the default Surfly button
+          Surfly.button();
+        }
+      });
     </script>
 </body>
 
