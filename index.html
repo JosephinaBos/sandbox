@@ -4,7 +4,13 @@
     <script type="text/javascript" src="js/CLUDO.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+</head>
+
+<body>
 
     <script>
         (function (s, u, r, f, l, y) {
@@ -13,52 +19,17 @@
             l.src = 'https://surfly.com/surfly.js'; y.parentNode.insertBefore(l, y);
         })
             (window, document, 'script', 'Surfly');
-    </script>
 
-    <script>
         Surfly.init({
-            widget_key: "71b83e9d18614406acf7ee43604cee7a",
+            widget_key: "0c17c102b943457a82838fe64a5a0a0d",
             docked_only: true,
-            hidden: true
         }, function (init) {
             if (init.success) {
-                // display the default Surfly button
-                //Surfly.button();
+                display the default Surfly button
+                Surfly.button();
             }
         });
     </script>
-
-    <style type="text/css">
-        #surfly-frame {
-            width: 100%;
-            height: 500px;
-        }
-    </style>
-</head>
-
-<body>
-    <script type="text/javascript">
-        var api = getAgentAPI();
-        var baseUrl = "www.wikipedia.com"
-        //message received from Cludo chat
-        api.onCallMessageReceived = function (event) {
-            var message = event.Call.IMMessage;
-            if (message.substr(0, 8) == "##SURFLY") {
-                var url = "www.facebook.com";
-                toastr.info("New Surfly session...");
-                window.setTimeout(() => {
-                    console.info("Redirecting to " + url);
-                    var session = Surfly.session({
-                        follower_redirect_url: baseUrl,
-                        on_end_redirect_follower_to_queue: false
-                    }, url).startFollower("#surfly-frame");
-                }, 3000);
-            }
-
-        }
-    </script>
-
-    <iframe id="surfly-frame" src=""></iframe>
 </body>
 
 </html>
