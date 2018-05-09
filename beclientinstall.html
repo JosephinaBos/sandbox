@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+        <title>Brava HTML Viewer v16.0.2.100 (Desktop Full Black UI)</title>
+
+        <style>
+            html, body { background-color: gray; height: 100%; margin: 0; overflow: hidden; padding: 0; }
+            #viewerContainer { height: 100%; margin: 0; padding: 0; }
+            iframe, object { display: block; }
+        </style>
+        <script src="http://bedemo.oceanbridge.jp:17681/BravaSDK/html-clients/html-clients.js"></script>
+        <script src="http://bedemo.oceanbridge.jp:17681/BravaSDK/HTML/viewer/viewer.js"></script>
+        <script>
+            function createClient() {
+                var source = "http://bedemo.oceanbridge.jp:17681/BravaSDK/HTML/sampleFiles/manuals/beclientinstall.docx";
+                var title = "Brava! Enterprise ActiveXクライアントガイド.docx";
+                var scurl = "http://bedemo.oceanbridge.jp:17681/BravaSDK/HTML/BravaDemoHV/GetThemeConfig.jsp" +
+                    "?source=" + encodeURI(source) +
+                    "&title=" + encodeURI(title) +
+                    "&ui=Desktop" +
+                    "&css=http://bedemo.oceanbridge.jp:17681/BravaSDK/HTML/viewer/lib/app/resources/themes-flat/black/theme-colors.css";
+
+                var viewer = brava.htmlClients.create("viewer", {
+                    path: "http://bedemo.oceanbridge.jp:17681/BravaSDK/HTML/viewer",
+                    container: "viewerContainer",
+                    signedConfigUrl: scurl,
+                    xmlPostType: "text/xml",
+                    logLevel: "all",
+                    reloadFunction: {
+                        name: "createClient"
+                    }
+                });
+
+                viewer.then(
+                    function(api) {
+                        window.api = api;
+                    },
+                    function(errorMessage) {
+                        console.error(errorMessage);
+                    }
+                );
+            };
+
+            window.onload = function() {
+                createClient();
+            };
+        </script>
+    </head>
+    <body>
+        <div id="viewerContainer"></div>
+    </body>
+</html>
