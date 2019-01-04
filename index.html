@@ -1,18 +1,132 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Customized session ID approach</title>
 </head>
-
 <body>
-<h1>Surfly iframe example</h1>
+    <h1 id="title">Customized session ID approach</h1>
+    <div class="footer" id="footer">
+       <button class="basic-button" id="btn-request-session" style="display: none;"  data-toggle="modal" data-target="#surfly-session-modal"><p>Get help</p></button>
+    </div>
 
-<iframe src=https://www.surfly.com width="500px">
+    <div id="surfly-session-modal" class="modal fade" role="dialog">
+        <div class="surfly-modal-dialog" role="document">
+            <div class="surfly-modal-header">
+                <h4 class="surfly-modal-title">Welcome to co-browsing</h4>
+            </div>
+            <div class="surfly-modal-body">
+                 <p id='s_uitleg'>You are about to start a co-browsing session. By clicking "Agree" you allow the helpdesk agent to browse the website with you.</p>
+                 <p id="id-cover"></p>
+                 <img id ="surfly_gif" style="display: none;" src="https://www.maplesoft.com/support/help/images/loading.gif">
+            </div>
+            <div class="surfly-modal-footer">
+                <button class="modal-button" id="btn-start-session" onclick="sessionStart(); displayGif();" aria-label="Close">Agree</button>
+            <!--     <button class="modal-button" id="btn-exit-modal" onclick="document.getElementById('btn-request-session').style.display='block'" data-dismiss="modal" aria-label="Close">Cancel</button> -->
+                <button class="modal-button" id="btn-end-session" onclick="exitSession(); document.getElementById('btn-request-session').style.display='block'" data-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+        </div>
+    </div>
+        <script>
+        //Add the Surfly snippet
+        (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+        l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+        l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+        (window,document,'script','Surfly');
 
-</script>
+        // Implement the Surfly init code, ADD YOUR OWN WIDGET KEY
+        Surfly.init({
+            widget_key: '0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
+            if (init.success) {
+                document.getElementById("btn-request-session").style.display = "block";
+                if (Surfly.currentSession) {
+                    document.getElementById("btn-request-session").style.display = "none";
+                }
+            }
+            //Make sure that once the session is ended, the correct session is removed from the active session list
+            Surfly.on('session_ended', function(session) {
+                var sessionLink = session.leaderLink;
+                var allSessions = Surfly._allSessions;
+                var activeSessions = [];
+                for (var i = 0; i < allSessions.length; i++) {
+                    if (allSessions[i].leaderLink !== sessionLink) {
+                        activeSessions.push(allSessions[i]);
+                    }
+                }
+                Surfly._allSessions = activeSessions;
+            })
+        });
+
+        //Function sessionStart, that can be applied to the "Start session"-button.
+        function sessionStart() {
+            var settings = {
+                block_until_agent_joins: false,
+                hide_until_agent_joins: true,
+                start_docked: true,
+                cookie_transfer_enabled: true,
+                cookie_transfer_proxying: false,
+                splash: false,
+                end_of_session_popup_url: "https://nl.surveymonkey.com/r/XRYJK96"
+            };
+            // Code that shows the formatted session-id so that it can be passed to the helpdesk agent
+            Surfly.session(settings)
+                .on('session_started', function(session, event) {
+                    console.log(session);
+                    var showId = document.getElementById("id-cover");
+                    showId.textContent = session.pin;
+                    document.getElementById("surfly_gif").style.display = "none";
+                    document.getElementById("btn-end-session").style.display = "block";
+                }).on('session_started', function(session, event) {
+                    console.log('cb session started');
+                    Surfly.listSessions()[0].setDrawingSettings({mode: 'temporary', width: 15, color: 'green', timeout: 5, userIndex: 0});
+                    // Code für Session-Ende.
+                }).on('session_ended', function(session, event) {
+                    console.log('cb session ended');
+                    // Code für wenn der Berater die Session verlassen hat.
+                }).on('viewer_left', function(session, event) {
+                    console.log('cb viewer left');
+                    console.log('cb session ended');
+                    surfly_session.end();
+                }).on('viewer_joined', function(session, event) {
+                    console.log('cb viewer joined');
+                    Surfly.listSessions()[0].setDrawingSettings({mode: 'temporary', width: 15, color: 'blue', timeout: 5, userIndex: 1});
+                }).startLeader(null, [{"name": "John Doe", "email": "johndoe@example.com"}]);
+        }
+
+        if (!window.__surfly) {
+
+            //Add your chat box snippet code (for this example I have used Olark)
+            ;(function(o,l,a,r,k,y){if(o.olark)return;
+            r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
+            y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
+            y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)};
+            y.extend=function(i,j){y("extend",i,j)};
+            y.identify=function(i){y("identify",k.i=i)};
+            y.configure=function(i,j){y("configure",i,j);k.c[i]=j};
+            k=y._={s:[],t:[+new Date],c:{},l:a};
+            })(window,document,"static.olark.com/jsclient/loader.js");
+            /* Add configuration calls below this comment */
+            olark.identify('7117-431-10-1219');
+            //UNTIL HERE
+        }
+
+        function displayGif(){
+            document.getElementById("s_uitleg").style.display = "none";
+            document.getElementById("surfly_gif").style.display = "block";
+            document.getElementById("btn-start-session").style.display = "none";
+            document.getElementById("btn-end-session").style.display = "none";
+        }
+
+        function exitSession(){
+            document.getElementById("surfly-session-modal").style.display = "none";
+            Surfly.listSessions()[0].end();
+        }
+    </script>
 </body>
-
 </html>
