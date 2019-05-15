@@ -8,54 +8,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Customized session ID approach</title>
+    <title>Surfly Sandbox</title>
 </head>
 <body>
-    <h1 id="title">Customized session ID approach</h1>
-    <div class="footer" id="footer">
-       <button class="basic-button" id="btn-request-session" style="display: none;"  data-toggle="modal" data-target="#surfly-session-modal"><p>Get help</p></button>
+    <h1 id="title">Sandbox</h1>
+    <div class="form">
+        <form class="example-form">
+            <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Korte Leidsedwarsstraat 12 1017RC Amsterdam" surfly_private>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Subscribe to our newsletter</label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+        </form>
     </div>
-
-    <div id="surfly-session-modal" class="modal fade" role="dialog">
-        <div class="surfly-modal-dialog" role="document">
-            <div class="surfly-modal-header">
-                <h4 class="surfly-modal-title">Welcome to co-browsing</h4>
-            </div>
-            <div class="surfly-modal-body">
-                 <p id='s_uitleg'>You are about to start a co-browsing session. By clicking "Agree" you allow the helpdesk agent to browse the website with you.</p>
-                 <p id="id-cover"></p>
-                 <img id ="surfly_gif" style="display: none;" src="https://www.maplesoft.com/support/help/images/loading.gif">
-            </div>
-            <div class="surfly-modal-footer">
-                <button class="modal-button" id="btn-start-session" onclick="sessionStart(); displayGif();" aria-label="Close">Agree</button>
-            <!--     <button class="modal-button" id="btn-exit-modal" onclick="document.getElementById('btn-request-session').style.display='block'" data-dismiss="modal" aria-label="Close">Cancel</button> -->
-                <button class="modal-button" id="btn-end-session" onclick="exitSession(); document.getElementById('btn-request-session').style.display='block'" data-dismiss="modal" aria-label="Close">Cancel</button>
-            </div>
-        </div>
-    </div>
-    <script>
-        (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-        l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-        l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-        (window,document,'script','Surfly');
-
-        var settings = {
-            widget_key:'0c17c102b943457a82838fe64a5a0a0d',
-            stealth_mode: true,
-            follower_redirect_url: 'https://www.desk.ge/ka/sessions'
-        };
-
-        Surfly.init(settings, function(initResult) {
-            if (initResult.success) {
-                // API calls can now be made!
-                if (Surfly.isInsideSession) {
-                    //inside session scripts
-                }
-            }
-            else{
-                console.log("Surfly was unable to initialize properly.")
-            }
-        });
-    </script>
+    <!-- <script>
+    </script> -->
 </body>
 </html>
