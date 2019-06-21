@@ -1,1 +1,1 @@
-<?php header( 'Location: /index.html#surflystart' ) ;  ?>
+<?php header( 'Location: /index.html' ) ;  ?>
