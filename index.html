@@ -33,7 +33,6 @@
           </div>
           <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
         </form>
-        <a href="#surflystart" type="submit" class="btn btn-primary" id="btn-cobrowse">Co-browse</a >
     </div>
     <script>
         (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
@@ -51,6 +50,7 @@
                 // API calls can now be made!
                 if (!Surfly.isInsideSession) {
                     //Let's co-browse
+                    Surfly.button();
                 }
             }
             else{
@@ -58,5 +58,21 @@
             }
         });
     </script>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+      window.__lc = window.__lc || {};
+      window.__lc.license = 11028132;
+      (function() {
+        var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+      })();
+    </script>
+    <noscript>
+    <a href="https://www.livechatinc.com/chat-with/11028132/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+    </noscript>
+    <!-- End of LiveChat code -->
+
 </body>
 </html>
